@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/all.min.css"/>
     <link rel="stylesheet" href="css/step1.css"/>
     <link rel="stylesheet" href="css/step2.css"/>
+    <link rel="stylesheet" href="css/step3.css"/>
+    <link rel="stylesheet" href="css/step4.css"/>
     <style>
         /*2020-12-17 주성호*/
         .step1{
@@ -17,10 +19,10 @@
             display: none;
         }
         .step3{
-            display: block;
+            display: none;
         }
         .step4{
-            display: none;
+            display: block;
         }
         .progressbar_container{
             width: 100%;
@@ -33,6 +35,25 @@
             height: 2px;
             width: 25%;
             transition:.5s;
+        }
+        .qualification_write_box{
+            width: 1080px;
+            min-height: 400px;
+            position: relative;
+        }
+
+        .content_qualification_write_box{
+            width: 700px;
+            min-height: 400px;
+            float: left;
+            background-color: #4b96e6;
+        }
+
+        .content_description_box{
+            float: left;
+            width: 380px;
+            min-height: 400px;
+            background-color: #3eb39d;
         }
     </style>
 </head>
@@ -77,314 +98,338 @@
 <div id="container"><!--container start-->
     <form method="post">
         <fieldset>
-    <div class="step_box step1">
-        <h2 class="spot">카테고리 선택</h2>
-        <div class="section_category"><!--category_section start-->
-            <ul class="category_list"><!--질문1. ul 써도 되는지 안되는지 질문으로 -->
-                <li class="category_item"><!-- catery_item start-->
-                    <div class="category_icon"><i class="fas fa-gamepad"></i></div>
-                    <h3 class="category_title">게임</h3>
-                    <div class="category_detail_box"><!--category_detail_box start-->
-                        <h3 class="screen_out">게임 하위 카테고리</h3>
+            <div class="step_box step1">
+                <h2 class="spot">카테고리 선택</h2>
+                <div class="section_category"><!--category_section start-->
+                    <ul class="category_list"><!--질문1. ul 써도 되는지 안되는지 질문으로 -->
+                        <li class="category_item"><!-- catery_item start-->
+                            <div class="category_icon"><i class="fas fa-gamepad"></i></div>
+                            <h3 class="category_title">게임</h3>
+                            <div class="category_detail_box"><!--category_detail_box start-->
+                                <h3 class="screen_out">게임 하위 카테고리</h3>
+                                <ul class="category_detail_list"><!--category_detail_list start -->
+                                    <li>
+                                        <input id="category_detail_item1" name="board_item" type="radio" value="1"/>
+                                        <h4><label for="category_detail_item1">콘솔게임</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item2" name="board_item" type="radio" value="2"/>
+                                        <h4><label for="category_detail_item2">PC게임</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item3" name="board_item" type="radio" value="3"/>
+                                        <h4><label for="category_detail_item3">모바일게임</label></h4>
+                                    </li>
+                                </ul><!--category_detail_list end -->
+                            </div><!--category_detail_box end-->
+                        </li><!-- catery_item end 1-->
+                        <li class="category_item"><!-- catery_item start-->
+                            <div class="category_icon"><i class="fas fa-campground"></i></div>
+                            <h3 class="category_title">아웃도어</h3>
+                            <div class="category_detail_box"><!--category_detail_box start-->
+                                <h3 class="screen_out">아웃도어 카테고리</h3>
+                                <ul class="category_detail_list"><!--category_detail_list start -->
+                                    <li>
+                                        <input id="category_detail_item4" name="board_item" type="radio" value="4"/>
+                                        <h4><label for="category_detail_item4">해외여행</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item5" name="board_item" type="radio" value="5"/>
+                                        <h4><label for="category_detail_item5">해외여행</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item6" name="board_item" type="radio" value="6"/>
+                                        <h4><label for="category_detail_item6">배낭여행</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item7" name="board_item" type="radio" value="7"/>
+                                        <h4><label for="category_detail_item7">캠핑</label></h4>
+                                    </li>
+                                </ul><!--category_detail_list end -->
+                            </div><!--category_detail_box end-->
+                        </li><!-- catery_item end 2-->
+                        <li class="category_item"><!-- catery_item start-->
+                            <div class="category_icon"><i class="fas fa-dog"></i></div>
+                            <h3 class="category_title">반려동물</h3>
+                            <div class="category_detail_box"><!--category_detail_box start-->
+                                <h3 class="screen_out">반려동물 카테고리</h3>
+                                <ul class="category_detail_list"><!--category_detail_list start -->
+                                    <li>
+                                        <input id="category_detail_item8" name="board_item" type="radio" value="8"/>
+                                        <h4><label for="category_detail_item8">반려동물</label></h4>
+                                    </li>
+                                </ul><!--category_detail_list end -->
+                            </div><!--category_detail_box end-->
+                        </li><!-- catery_item end 3-->
+                        <li class="category_item"><!-- catery_item start-->
+                            <div class="category_icon"><i class="fas fa-people-carry"></i></div>
+                            <h3 class="category_title">봉사활동</h3>
+                            <div class="category_detail_box"><!--category_detail_box start-->
+                                <h3 class="screen_out">봉사활동 카테고리</h3>
+                                <ul class="category_detail_list"><!--category_detail_list start -->
+                                    <li>
+                                        <input id="category_detail_item9" name="board_item" type="radio" value="9"/>
+                                        <h4><label for="category_detail_item9">봉사활동</label></h4>
+                                    </li>
+                                </ul><!--category_detail_list end -->
+                            </div><!--category_detail_box end-->
+                        </li><!-- catery_item end 4-->
+                        <li class="category_item"><!-- catery_item start-->
+                            <div class="category_icon"><i class="fas fa-users"></i></div>
+                            <h3 class="category_title">사교모임</h3>
+                            <div class="category_detail_box"><!--category_detail_box start-->
+                                <h3 class="screen_out">사교모임 카테고리</h3>
+                                <ul class="category_detail_list"><!--category_detail_list start -->
+                                    <li>
+                                        <input id="category_detail_item10" name="board_item" type="radio" value="10"/>
+                                        <h4><label for="category_detail_item10">사교모임</label></h4>
+                                    </li>
+                                </ul><!--category_detail_list end -->
+                            </div><!--category_detail_box end-->
+                        </li><!-- catery_item end 5-->
+                        <li class="category_item"><!-- catery_item start-->
+                            <div class="category_icon"><i class="fas fa-book"></i></div>
+                            <h3 class="category_title">스터디</h3>
+                            <div class="category_detail_box"><!--category_detail_box start-->
+                                <h3 class="screen_out">스터디 카테고리</h3>
+                                <ul class="category_detail_list"><!--category_detail_list start -->
+                                    <li>
+                                        <input id="category_detail_item11" name="board_item" type="radio" value="11"/>
+                                        <h4><label for="category_detail_item11">언어</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item12" name="board_item" type="radio" value="12"/>
+                                        <h4><label for="category_detail_item12">자격증</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item13" name="board_item" type="radio" value="13"/>
+                                        <h4><label for="category_detail_item13">스터디</label></h4>
+                                    </li>
+                                </ul><!--category_detail_list end -->
+                            </div><!--category_detail_box end-->
+                        </li><!-- catery_item end 6-->
+                        <li class="category_item"><!-- catery_item start-->
+                            <div class="category_icon"><i class="fas fa-futbol"></i></div>
+                            <h3 class="category_title">스포츠/레저</h3>
+                            <div class="category_detail_box"><!--category_detail_box start-->
+                                <h3 class="screen_out">스포츠/레저 카테고리</h3>
+                                <ul class="category_detail_list"><!--category_detail_list start -->
+                                    <li>
+                                        <input id="category_detail_item14" name="board_item" type="radio" value="14"/>
+                                        <h4><label for="category_detail_item14">자전거</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item15" name="board_item" type="radio" value="15"/>
+                                        <h4><label for="category_detail_item15">구기종목</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item16" name="board_item" type="radio" value="16"/>
+                                        <h4><label for="category_detail_item16">골프</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item17" name="board_item" type="radio" value="17"/>
+                                        <h4><label for="category_detail_item17">등산</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item18" name="board_item" type="radio" value="18"/>
+                                        <h4><label for="category_detail_item18">낚시</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item19" name="board_item" type="radio" value="19"/>
+                                        <h4><label for="category_detail_item19">볼링</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item20" name="board_item" type="radio" value="20"/>
+                                        <h4><label for="category_detail_item20">수영</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item21" name="board_item" type="radio" value="21"/>
+                                        <h4><label for="category_detail_item21">러닝</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item22" name="board_item" type="radio" value="22"/>
+                                        <h4><label for="category_detail_item22">스노보드/스키</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item23" name="board_item" type="radio" value="23"/>
+                                        <h4><label for="category_detail_item23">스포츠/레저</label></h4>
+                                    </li>
+                                </ul><!--category_detail_list end -->
+                            </div><!--category_detail_box end-->
+                        </li><!-- catery_item end 7-->
+                        <li class="category_item"><!-- catery_item start-->
+                            <div class="category_icon"><i class="fas fa-guitar"></i></div>
+                            <h3 class="category_title">음악/악기</h3>
+                            <div class="category_detail_box"><!--category_detail_box start-->
+                                <h3 class="screen_out">음악/악기 카테고리</h3>
+                                <ul class="category_detail_list"><!--category_detail_list start -->
+                                    <li>
+                                        <input id="category_detail_item24" name="board_item" type="radio" value="24"/>
+                                        <h4><label for="category_detail_item24">팝/R&B</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item25" name="board_item" type="radio" value="25"/>
+                                        <h4><label for="category_detail_item25">락/메탈</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item26" name="board_item" type="radio" value="26"/>
+                                        <h4><label for="category_detail_item26">힙합</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item27" name="board_item" type="radio" value="27"/>
+                                        <h4><label for="category_detail_item27">클래식/재즈</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item28" name="board_item" type="radio" value="28"/>
+                                        <h4><label for="category_detail_item28">인디</label></h4>
+                                    </li>
+                                    <li>
+                                        <input id="category_detail_item29" name="board_item" type="radio" value="29"/>
+                                        <h4><label for="category_detail_item29">악기</label></h4>
+                                    </li>
+                                </ul><!--category_detail_list end -->
+                            </div><!--category_detail_box end-->
+                        </li><!-- catery_item end 8-->
+                        <li class="category_item"><!-- catery_item start-->
+                            <div class="category_icon"><i class="fas fa-pallet"></i></div>
+                            <h3 class="category_title">문화/예술</h3>
+                            <div class="category_detail_box"><!--category_detail_box start-->
+                        <h3 class="screen_out">문화/예술 카테고리</h3>
                         <ul class="category_detail_list"><!--category_detail_list start -->
                             <li>
-                                <input id="category_detail_item1" name="board_item" type="radio" value="1"/>
-                                <h4><label for="category_detail_item1">콘솔게임</label></h4>
+                                <input id="category_detail_item30" name="board_item" type="radio" value="30"/>
+                                <h4><label for="category_detail_item30">영화</label></h4>
                             </li>
                             <li>
-                                <input id="category_detail_item2" name="board_item" type="radio" value="2"/>
-                                <h4><label for="category_detail_item2">PC게임</label></h4>
+                                <input id="category_detail_item31" name="board_item" type="radio" value="31"/>
+                                <h4><label for="category_detail_item31">공연/뮤지컬</label></h4>
                             </li>
                             <li>
-                                <input id="category_detail_item3" name="board_item" type="radio" value="3"/>
-                                <h4><label for="category_detail_item3">모바일게임</label></h4>
+                                <input id="category_detail_item32" name="board_item" type="radio" value="32"/>
+                                <h4><label for="category_detail_item32">미술/전시</label></h4>
+                            </li>
+                            <li>
+                                <input id="category_detail_item33" name="board_item" type="radio" value="33"/>
+                                <h4><label for="category_detail_item33">그림/일러스트</label></h4>
+                            </li>
+                            <li>
+                                <input id="category_detail_item34" name="board_item" type="radio" value="34"/>
+                                <h4><label for="category_detail_item34">댄스/무용</label></h4>
+                            </li>
+                            <li>
+                                <input id="category_detail_item35" name="board_item" type="radio" value="35"/>
+                                <h4><label for="category_detail_item35">문화생활</label></h4>
                             </li>
                         </ul><!--category_detail_list end -->
-                    </div><!--category_detail_box end-->
-                </li><!-- catery_item end 1-->
-                <li class="category_item"><!-- catery_item start-->
-                    <div class="category_icon"><i class="fas fa-campground"></i></div>
-                    <h3 class="category_title">아웃도어</h3>
-                    <div class="category_detail_box"><!--category_detail_box start-->
-                        <h3 class="screen_out">아웃도어 카테고리</h3>
-                        <ul class="category_detail_list"><!--category_detail_list start -->
-                            <li>
-                                <input id="category_detail_item4" name="board_item" type="radio" value="4"/>
-                                <h4><label for="category_detail_item4">해외여행</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item5" name="board_item" type="radio" value="5"/>
-                                <h4><label for="category_detail_item5">해외여행</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item6" name="board_item" type="radio" value="6"/>
-                                <h4><label for="category_detail_item6">배낭여행</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item7" name="board_item" type="radio" value="7"/>
-                                <h4><label for="category_detail_item7">캠핑</label></h4>
-                            </li>
-                        </ul><!--category_detail_list end -->
-                    </div><!--category_detail_box end-->
-                </li><!-- catery_item end 2-->
-                <li class="category_item"><!-- catery_item start-->
-                    <div class="category_icon"><i class="fas fa-dog"></i></div>
-                    <h3 class="category_title">반려동물</h3>
-                    <div class="category_detail_box"><!--category_detail_box start-->
-                        <h3 class="screen_out">반려동물 카테고리</h3>
-                        <ul class="category_detail_list"><!--category_detail_list start -->
-                            <li>
-                                <input id="category_detail_item8" name="board_item" type="radio" value="8"/>
-                                <h4><label for="category_detail_item8">반려동물</label></h4>
-                            </li>
-                        </ul><!--category_detail_list end -->
-                    </div><!--category_detail_box end-->
-                </li><!-- catery_item end 3-->
-                <li class="category_item"><!-- catery_item start-->
-                    <div class="category_icon"><i class="fas fa-people-carry"></i></div>
-                    <h3 class="category_title">봉사활동</h3>
-                    <div class="category_detail_box"><!--category_detail_box start-->
-                        <h3 class="screen_out">봉사활동 카테고리</h3>
-                        <ul class="category_detail_list"><!--category_detail_list start -->
-                            <li>
-                                <input id="category_detail_item9" name="board_item" type="radio" value="9"/>
-                                <h4><label for="category_detail_item9">봉사활동</label></h4>
-                            </li>
-                        </ul><!--category_detail_list end -->
-                    </div><!--category_detail_box end-->
-                </li><!-- catery_item end 4-->
-                <li class="category_item"><!-- catery_item start-->
-                    <div class="category_icon"><i class="fas fa-users"></i></div>
-                    <h3 class="category_title">사교모임</h3>
-                    <div class="category_detail_box"><!--category_detail_box start-->
-                        <h3 class="screen_out">사교모임 카테고리</h3>
-                        <ul class="category_detail_list"><!--category_detail_list start -->
-                            <li>
-                                <input id="category_detail_item10" name="board_item" type="radio" value="10"/>
-                                <h4><label for="category_detail_item10">사교모임</label></h4>
-                            </li>
-                        </ul><!--category_detail_list end -->
-                    </div><!--category_detail_box end-->
-                </li><!-- catery_item end 5-->
-                <li class="category_item"><!-- catery_item start-->
-                    <div class="category_icon"><i class="fas fa-book"></i></div>
-                    <h3 class="category_title">스터디</h3>
-                    <div class="category_detail_box"><!--category_detail_box start-->
-                        <h3 class="screen_out">스터디 카테고리</h3>
-                        <ul class="category_detail_list"><!--category_detail_list start -->
-                            <li>
-                                <input id="category_detail_item11" name="board_item" type="radio" value="11"/>
-                                <h4><label for="category_detail_item11">언어</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item12" name="board_item" type="radio" value="12"/>
-                                <h4><label for="category_detail_item12">자격증</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item13" name="board_item" type="radio" value="13"/>
-                                <h4><label for="category_detail_item13">스터디</label></h4>
-                            </li>
-                        </ul><!--category_detail_list end -->
-                    </div><!--category_detail_box end-->
-                </li><!-- catery_item end 6-->
-                <li class="category_item"><!-- catery_item start-->
-                    <div class="category_icon"><i class="fas fa-futbol"></i></div>
-                    <h3 class="category_title">스포츠/레저</h3>
-                    <div class="category_detail_box"><!--category_detail_box start-->
-                        <h3 class="screen_out">스포츠/레저 카테고리</h3>
-                        <ul class="category_detail_list"><!--category_detail_list start -->
-                            <li>
-                                <input id="category_detail_item14" name="board_item" type="radio" value="14"/>
-                                <h4><label for="category_detail_item14">자전거</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item15" name="board_item" type="radio" value="15"/>
-                                <h4><label for="category_detail_item15">구기종목</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item16" name="board_item" type="radio" value="16"/>
-                                <h4><label for="category_detail_item16">골프</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item17" name="board_item" type="radio" value="17"/>
-                                <h4><label for="category_detail_item17">등산</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item18" name="board_item" type="radio" value="18"/>
-                                <h4><label for="category_detail_item18">낚시</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item19" name="board_item" type="radio" value="19"/>
-                                <h4><label for="category_detail_item19">볼링</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item20" name="board_item" type="radio" value="20"/>
-                                <h4><label for="category_detail_item20">수영</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item21" name="board_item" type="radio" value="21"/>
-                                <h4><label for="category_detail_item21">러닝</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item22" name="board_item" type="radio" value="22"/>
-                                <h4><label for="category_detail_item22">스노보드/스키</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item23" name="board_item" type="radio" value="23"/>
-                                <h4><label for="category_detail_item23">스포츠/레저</label></h4>
-                            </li>
-                        </ul><!--category_detail_list end -->
-                    </div><!--category_detail_box end-->
-                </li><!-- catery_item end 7-->
-                <li class="category_item"><!-- catery_item start-->
-                    <div class="category_icon"><i class="fas fa-guitar"></i></div>
-                    <h3 class="category_title">음악/악기</h3>
-                    <div class="category_detail_box"><!--category_detail_box start-->
-                        <h3 class="screen_out">음악/악기 카테고리</h3>
-                        <ul class="category_detail_list"><!--category_detail_list start -->
-                            <li>
-                                <input id="category_detail_item24" name="board_item" type="radio" value="24"/>
-                                <h4><label for="category_detail_item24">팝/R&B</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item25" name="board_item" type="radio" value="25"/>
-                                <h4><label for="category_detail_item25">락/메탈</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item26" name="board_item" type="radio" value="26"/>
-                                <h4><label for="category_detail_item26">힙합</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item27" name="board_item" type="radio" value="27"/>
-                                <h4><label for="category_detail_item27">클래식/재즈</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item28" name="board_item" type="radio" value="28"/>
-                                <h4><label for="category_detail_item28">인디</label></h4>
-                            </li>
-                            <li>
-                                <input id="category_detail_item29" name="board_item" type="radio" value="29"/>
-                                <h4><label for="category_detail_item29">악기</label></h4>
-                            </li>
-                        </ul><!--category_detail_list end -->
-                    </div><!--category_detail_box end-->
-                </li><!-- catery_item end 8-->
-                <li class="category_item"><!-- catery_item start-->
-                    <div class="category_icon"><i class="fas fa-pallet"></i></div>
-                    <h3 class="category_title">문화/예술</h3>
-                    <div class="category_detail_box"><!--category_detail_box start-->
-                <h3 class="screen_out">문화/예술 카테고리</h3>
-                <ul class="category_detail_list"><!--category_detail_list start -->
-                    <li>
-                        <input id="category_detail_item30" name="board_item" type="radio" value="30"/>
-                        <h4><label for="category_detail_item30">영화</label></h4>
-                    </li>
-                    <li>
-                        <input id="category_detail_item31" name="board_item" type="radio" value="31"/>
-                        <h4><label for="category_detail_item31">공연/뮤지컬</label></h4>
-                    </li>
-                    <li>
-                        <input id="category_detail_item32" name="board_item" type="radio" value="32"/>
-                        <h4><label for="category_detail_item32">미술/전시</label></h4>
-                    </li>
-                    <li>
-                        <input id="category_detail_item33" name="board_item" type="radio" value="33"/>
-                        <h4><label for="category_detail_item33">그림/일러스트</label></h4>
-                    </li>
-                    <li>
-                        <input id="category_detail_item34" name="board_item" type="radio" value="34"/>
-                        <h4><label for="category_detail_item34">댄스/무용</label></h4>
-                    </li>
-                    <li>
-                        <input id="category_detail_item35" name="board_item" type="radio" value="35"/>
-                        <h4><label for="category_detail_item35">문화생활</label></h4>
-                    </li>
-                </ul><!--category_detail_list end -->
-        </div><!--category_detail_box end-->
-        </li><!-- catery_item end 9-->
-            </ul><!--category_list end -->
-        </div>
-    </div><!--// step1 end-->
-    <div class="step_box step2">
-        <div class="crew_create_box">
-            <legend class="screen_out">크루 만들기 step2</legend>
-            <div class="crew_create_input_name_box">
-                <label><h2>크루이름</h2>
-                    <input class="crew_name_input" placeholder="크루이름 입력" maxlength="10"/><span class="crew_name_len_limit">최소2자/최대10자</span>
-                </label>
-            </div>
-            <div class="crew_create_cover_box">
-                <h2>크루 커버사진</h2>
-                <div class="crew_create_cover_inner">
-                    <div class="crew_image_selected">
-                        <img src="img/category1.jpg" width="280" height="220" title="" alt="" />
-                    </div>
-                    <ul class="crew_image_list">
-                        <li class="crew_image_item"><a><img src="img/category1.jpg" width="150" height="100" title="" alt="" /></a></li>
-                        <li class="crew_image_item"><a><img src="img/category2.jpg" width="150" height="100" title="" alt="" /></a></li>
-                        <li class="crew_image_item"><a><img src="img/category3.jpg" width="150" height="100" title="" alt="" /></a></li>
-                        <li class="crew_image_item"><a><img src="img/category4.jpg" width="150" height="100" title="" alt="" /></a></li>
-                        <li class="crew_image_item"><a><img src="img/category5.jpg" width="150" height="100" title="" alt="" /></a></li>
-                        <li class="crew_image_item"><a><img src="img/category6.jpg" width="150" height="100" title="" alt="" /></a></li>
-                        <li class="crew_image_item"><a><img src="img/category7.jpg" width="150" height="100" title="" alt="" /></a></li>
-                        <li class="crew_image_item"><a><img src="img/category1.jpg" width="150" height="100" title="" alt="" /></a></li>
-                    </ul>
+                </div><!--category_detail_box end-->
+                </li><!-- catery_item end 9-->
+                    </ul><!--category_list end -->
                 </div>
-            </div><!--crew_create_cover_box-->
+            </div><!--// step1 end-->
+            <div class="step_box step2">
+                <div class="crew_create_box">
+                    <legend class="screen_out">크루 만들기 step2</legend>
+                    <div class="crew_create_input_name_box">
+                        <label><h2>크루이름</h2>
+                            <input class="crew_name_input" placeholder="크루이름 입력" maxlength="10"/><span class="crew_name_len_limit">최소2자/최대10자</span>
+                        </label>
+                    </div>
+                    <div class="crew_create_cover_box">
+                        <h2>크루 커버사진</h2>
+                        <div class="crew_create_cover_inner">
+                            <div class="crew_image_selected">
+                                <img src="img/category1.jpg" width="280" height="220" title="" alt="" />
+                            </div>
+                            <ul class="crew_image_list">
+                                <li class="crew_image_item"><a><img src="img/category1.jpg" width="150" height="100" title="" alt="" /></a></li>
+                                <li class="crew_image_item"><a><img src="img/category2.jpg" width="150" height="100" title="" alt="" /></a></li>
+                                <li class="crew_image_item"><a><img src="img/category3.jpg" width="150" height="100" title="" alt="" /></a></li>
+                                <li class="crew_image_item"><a><img src="img/category4.jpg" width="150" height="100" title="" alt="" /></a></li>
+                                <li class="crew_image_item"><a><img src="img/category5.jpg" width="150" height="100" title="" alt="" /></a></li>
+                                <li class="crew_image_item"><a><img src="img/category6.jpg" width="150" height="100" title="" alt="" /></a></li>
+                                <li class="crew_image_item"><a><img src="img/category7.jpg" width="150" height="100" title="" alt="" /></a></li>
+                                <li class="crew_image_item"><a><img src="img/category1.jpg" width="150" height="100" title="" alt="" /></a></li>
+                            </ul>
+                        </div>
+                    </div><!--crew_create_cover_box-->
 
 
-            <div class="crew_create_input_intro_box">
-                <label><h2>크루 한 줄 소개글</h2>
-                    <input class="crew_intro_input" maxlength="20" placeholder="한 줄 소개글 입력"/>
-                    <span class="crew_intro_len_limit">최대 20자</span>
-                    <span class="crew_create_detail"></span>
-                </label>
-            </div>
-            <div class="crew_create_btn_box">
-                <button class="prev_btn"><a>이전</a></button>
-                <button class="next_btn" type="submit">다음</button>
-            </div>
+                    <div class="crew_create_input_intro_box">
+                        <label><h2>크루 한 줄 소개글</h2>
+                            <input class="crew_intro_input" maxlength="20" placeholder="한 줄 소개글 입력"/>
+                            <span class="crew_intro_len_limit">최대 20자</span>
+                            <span class="crew_create_detail"></span>
+                        </label>
+                    </div>
+                    <div class="crew_create_btn_box">
+                        <button class="prev_btn"><a>이전</a></button>
+                        <button class="next_btn_step2">다음</button>
+                    </div>
 
-            </div><!-- crew_create_box end-->
-        </div><!--//step2 end-->
-    <div class="step_box step3">
-        <h2>크루 연령대 설정</h2>
-        <div class="birth_year_box">
-            <label for=olderYear></label>
-            <span class="age">
-					<select id="olderYear" name="olderYear">
-                        <option selected value="1985">1985</option>
-                        <option value="1986">1986</option>
-                        <option value="1987">1987</option>
-                        <option value="1988">1988</option>
-                        <option value="1989">1989</option>
-                        <option value="1990">1990</option>
-                        <option value="1990">1991</option>
-                        <option value="1990">1992</option>
-                        <option value="1990">1993</option>
-                        <option value="1990">1994</option>
-                        <option value="1995">1995</option>
-					</select><em>년</em>
-            </span>
+                    </div><!-- crew_create_box end-->
+                </div><!--//step2 end-->
+            <div class="step_box step3"><!--step3 start-->
+                <div>
+                    <div class="birth_year_box"><!--birth_year_box start-->
+                        <h2><label for=olderYear>크루 연령대 설정</label></h2>
+                        <span class="age">
+                                <select id="olderYear" name="olderYear">
+                                    <option selected value="1985">1985</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1990">1991</option>
+                                    <option value="1990">1992</option>
+                                    <option value="1990">1993</option>
+                                    <option value="1990">1994</option>
+                                    <option value="1995">1995</option>
+                                </select><span class=""> ~ </span>
+                        </span>
+                        <label for=youngerYear></label>
+                        <span class="age">
+                                <select id="youngerYear" name="youngerYear">
+                                    <option value="1985">1995</option>
+                                    <option value="1986">1996</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1999">1999</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option selected value="2005">2005</option>
+                                </select><span> 년생</span>
+                        </span>
+                        <h4>1985년 ~ 2005년생까지 설정할 수 있습니다.</h4>
+                    </div><!--//birth_year_box end-->
+                    <div class="popular_limit_box">
+                        <span>
+                            <label><h2>최대 인원 설정</h2>
+                                <input class="crew_population_input" maxlength="2" placeholder="30" value="30"/><span class="head_count"> 명</span>
 
-            <label for=youngerYear></label>
-            <span class="age">
-					<select id="youngerYear" name="youngerYear">
-                        <option value="1985">1995</option>
-                        <option value="1986">1996</option>
-                        <option value="1997">1997</option>
-                        <option value="1998">1998</option>
-                        <option value="1999">1999</option>
-                        <option value="2000">2000</option>
-                        <option value="2001">2001</option>
-                        <option value="2002">2002</option>
-                        <option value="2003">2003</option>
-                        <option value="2004">2004</option>
-                        <option selected value="2005">2005</option>
-					</select><em>년</em>
-            </span>
-        </div>
-    </div><!--//step3 end-->
+                                <span class="crew_population_limit">(최소 10명 / 최대 30명)</span>
+                            </label>
+                        </span>
+                    </div><!--//popular_limit_box end-->
+                    <div class="crew_create_btn_box">
+                        <button class="prev_btn"><a>이전</a></button>
+                        <button class="next_btn_step3">다음</button>
+                    </div>
+                </div><!--// inner end -->
+            </div><!--//step3 end-->
+            <div class="step_box step4">
+                <div class="qualification_write_box">
+                    <div class="content_qualification_write_box">
+                        <h2>크루장님이 원하시는 크루 가입조건을 설정해주세요</h2>
+                    </div>
+                    <div class="content_description_box">
+
+                    </div>
+                </div>
+            </div><!--//step4 end-->
        </fieldset>
 
     </form>
@@ -418,10 +463,13 @@
 <script src="js/default.js"></script>
 <script src="js/step1.js"></script>
 <script src="js/step2.js"></script>
+<script src="js/step3.js"></script>
+<script src="js/step4.js"></script>
 <script>
 
 
-    const $nextBtn = $('.next_btn');
+    const $nextBtn2 = $('.next_btn_step2');
+    const $nextBtn3 = $('.next_btn_step3');
     const $prevBtn = $('.prev_btn');
 
 
@@ -439,6 +487,7 @@
     $categoryDetailItem.checked(function (e) {
         $step1.toggleClass()
     });
+
 
 
 

@@ -35,12 +35,12 @@ $crew_intro.keyup(function (e) {
 });//#$crew_name.onkeydown() end
 function nextBtnOn(nameFlag, crewFlag, imgFlag){
     if(nameFlag==true && crewFlag==true && imgFlag==true){
-        $nextBtn.css({
+        $nextBtn2.css({
             "background-color": "#FF6333",
             "color": "#fff"
         });
     }else{
-        $nextBtn.css({
+        $nextBtn2.css({
             "background-color": "#eee",
             "color": "#000"
         });

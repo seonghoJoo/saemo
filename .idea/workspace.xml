@@ -20,41 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05598bb2-dcf1-4913-bd2e-f7cdbb63f584" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../front_end/1205/1_array.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front_end/1205/2_map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front_end/1205/3_filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front_end/1205/4_spliceANDslice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/name.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/category_choose.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crewDetailPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/crewDetailPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/default2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/default3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/step1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/step2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/tui-date-picker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/category1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/category2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/category3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/category4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/category5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/category6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/category7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/category8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/category9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/default.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/step1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/step2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tui-date-picker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pop_write.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/모임만들기.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/모임상세.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../front_end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../front_end/0909/6_요소의생성.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front_end/0909/6_요소의생성.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/step3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/step4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/step3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/step4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category_choose.html" beforeDir="false" afterPath="$PROJECT_DIR$/category_choose.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/step2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/step2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/step2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/step2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled1 (2).7z" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,13 +40,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1lOo1C8MsxviZ2Ol7sbFmvOkp7P" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -125,6 +100,7 @@
       <workItem from="1608434693313" duration="7306000" />
       <workItem from="1608502824072" duration="8967000" />
       <workItem from="1608516795685" duration="7752000" />
+      <workItem from="1608527824959" duration="3827000" />
     </task>
     <servers />
   </component>

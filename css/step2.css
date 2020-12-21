@@ -19,7 +19,7 @@
     margin:40px 0 20px 0;
     position:relative;
 }
-.crew_name_input,.crew_intro_input:focus{/*<input> 포커스시 보더*/
+.crew_name_input,.crew_intro_input, .crew_population_input:focus{/*<input> 포커스시 보더*/
     outline-color: #ff6333;
 
 }
@@ -78,15 +78,12 @@
     height: 50px;
     padding:25px 0;
 }
-.crew_create_btn_box button{
+.crew_create_btn_box > button{
     width: 200px;
     height: 50px;
     background-color: #eeeeee;
     outline: none;
     border: none;
-}
-.crew_create_btn_box > button{
-    background-color: #eee;
 }
 .on_background{
     background-color: #FF6333;
