@@ -8,7 +8,7 @@ const $crew_intro = $('.crew_intro_input');
 const nameExp = /^[가-힣|a-zA-Z]{2,10}$/;
 const introExp = /^[가-힣|a-zA-z|\d]{0,20}$/;
 let nameFlag = false, crewFlag = false,imgFlag=true;
-$crew_name.keydown(function (e) {
+$crew_name.keyup(function (e) {
 
     let val = $crew_name.val();
     $crewNameLenLimit.text("("+val.length+" / 10자)");    //글자수 실시간 카운팅

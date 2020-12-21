@@ -1,1 +1,38 @@
 @charset "UTF-8";
+
+.qualification_write_box{
+    width: 1080px;
+    min-height: 400px;
+    position: relative;
+}
+
+.content_qualification_write_box{
+    width: 860px;
+    min-height: 400px;
+    float: left;
+    background-color: #4b96e6;
+}
+.content_description_box{
+    float: left;
+    width: 209px;
+    border-left: 1px solid #424242;
+    min-height: 390px;
+    padding: 10px 0 0 10px;
+}
+.content_description_box h4{
+    margin-bottom: 15px;
+}
+.description_star {
+    font-size: 14px;
+    color: #FF6333;
+}
+.content_description_box dd{
+    margin:10px;
+}
+.description_file{
+    width: 100px;
+    height: 20px;
+    background-color: #424242;
+    text-align: center;
+    line-height: 20px;
+}

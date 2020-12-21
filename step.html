@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #wrap {
+            width:600px;
+            height:600px;
+            border:1px solid #424242;
+        }
+        .step {
+            width:600px;
+            height:600px;
+            position: absolute;
+            display: none;
+        }
+
+        .step:nth-child(1) {background-color: red}
+        .step1 .step:nth-child(1) {display: block}
+        .step1 .step:nth-child(2) {display: none}
+        .step1 .step:nth-child(3) {display: none}
+        .step1 .step:nth-child(4) {display: none}
+        .step:nth-child(2) {background: blue}
+        .step2 .step:nth-child(1) {display: none}
+        .step2 .step:nth-child(2) {display: block}
+        .step2 .step:nth-child(3) {display: none}
+        .step2 .step:nth-child(4) {display: none}
+        .step:nth-child(3) {background: green}
+        .step3 .step:nth-child(1) {display: none}
+        .step3 .step:nth-child(2) {display: none}
+        .step3 .step:nth-child(3) {display: block}
+        .step3 .step:nth-child(4) {display: none}
+        .step:nth-child(4) {background: yellow}
+        .step4 .step:nth-child(1) {display: none}
+        .step4 .step:nth-child(2) {display: none}
+        .step4 .step:nth-child(3) {display: none}
+        .step4 .step:nth-child(4) {display: block}
+
+    </style>
+</head>
+<body>
+    <div id="wrap" class="step1">
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+    </div>
+<button id="prevBtn">이전</button>
+<button id="nextBtn">다음</button>
+<script src="js/jquery.js"></script>
+<script>
+    let idx = 1;
+
+    $("#nextBtn").click(function () {
+        $("#wrap").attr("class","step"+ ++idx);
+    });
+
+    $("#prevBtn").click(function () {
+        $("#wrap").attr("class","step"+ --idx);
+    });
+
+</script>
+</body>
+</html>

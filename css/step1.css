@@ -109,7 +109,13 @@
     line-height: 30px;
     float: left;
     background-color: #FF6333;
+    cursor: pointer;
 }
+.category_detail_list li input{
+    width: 100px;
+    height: 30px;
+}
+
 .on{
     color:#FF6333;
 }

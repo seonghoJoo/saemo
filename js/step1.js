@@ -10,8 +10,6 @@ $li1.hover(function (e) {
     // 순수 자바스크립트객체 => jquery객체로 변경
     // HOW? $(this)
     //hover 취소
-    console.log($(this).children().index());
-
     if($(this).children().eq(0).hasClass("on")){
         // on 클래스 제거
         $(this).children().eq(0).removeClass("on");
@@ -55,7 +53,7 @@ $li2.hover(function (e) {
     // 순수 자바스크립트객체 => jquery객체로 변경
     // HOW? $(this)
     //hover 취소
-    console.log($(this).children().index());
+    // console.log($(this).children().index());
 
     if($(this).children().eq(0).hasClass("on")){
         // on 클래스 제거
@@ -101,7 +99,7 @@ $li3.hover(function (e) {
     // 순수 자바스크립트객체 => jquery객체로 변경
     // HOW? $(this)
     //hover 취소
-    console.log($(this).children().index());
+    // console.log($(this).children().index());
 
     if($(this).children().eq(0).hasClass("on")){
         // on 클래스 제거
