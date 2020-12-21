@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>font awesome 아이콘 사용</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <style>
+        #header{
+            z-index: 10;
+            background-color: white;
+        }
+        #container{
+            position: relative;
+        }
+        #footer{
+            margin-top: 200px;
+        }
+        /*12-18*/
+        #content{
+            width: 1080px;
+            margin: auto;
+        }
+        table{
+            border: 1px solid #bebebe;
+        }
+        .form_title{
+            font-size: 40px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .first_td{ /*각 열의 첫번째 행*/
+            width: 200px;
+            height: 100px;
+            font-size: 30px;
+            border-bottom: 1px solid #bebebe;
+            text-align: center;
+            line-height: 100px;
+            background-color: #dcdcdc;
+        }
+        .second_td{/*두번 째 td*/
+            width: 850px;
+            padding-left: 60px;
+            border-bottom: 1px solid #bebebe;
+            vertical-align: middle;
+        }
+        .input_style1{ /*<input> 모임이름,장소,회비,준비물 */
+            width: 250px;
+            height: 30px;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .detail_input textarea,.add_box_input,.input_style1:focus{/*<input> 포커스시 보더*/
+            outline-color: #ff6333;
+        }
+        .input_time{ /*<input> 시간  */
+            width: 150px;
+            height: 30px;
+            vertical-align: middle;
+        }
+        .date_input{ /*<input> 날자 */
+            height: 30px;
+            width: 150px;
+            margin-right: 30px;
+        }
+        .local_input input{/*주소, 상제주소*/
+            display: block;
+            margin-top: 6px;
+        }
+        .counting_characters{/*글자 수 카운티 글*/
+            font-size: 20px;
+            vertical-align: bottom;
+        }
+        .detail_input textarea{/*글자 수 카운티 글*/
+            width: 250px;
+            height: 60px;
+            vertical-align: middle;
+            resize: none;
+            margin-right: 10px;
+        }
+        .create_end_btn{/*<button>모임 만들기*/
+            width: 200px;
+            height: 50px;
+            background-color: rgb(255, 91, 51);
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 30px;
+            position: absolute;
+            top: 850px;
+            left: 50%;
+            margin-left: -100px;
+        }
+        .create_end_btn:hover{/*버튼 오버시*/
+            box-shadow: 0 2px 5px 0 rgb(255, 91, 51), 0 2px 10px 0 rgb(255, 91, 51);
+            cursor: pointer;
+        }
+        .local_map{/*지도 공간*/
+            background-color: #bebebe;
+            width: 431px;
+            height: 303px;
+            position: absolute;
+            left: 60%;
+            top: 402px;
+        }
+        .check_date,.span_one{/*<checkbox> 하루종일, '원'*/
+            vertical-align: bottom;
+            font-size: 20px;
+        }
+        .each_preparation{/*준비물 추가된 박스*/
+            width: 210px;
+            height: 30px;
+            background-color: #FFAB40;
+            font-size: 20px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 8px;
+            color: white;
+            display: inline-block;
+            position: relative;
+            float: left;
+            border: 1px solid #FF9100;
+        }
+        .each_preparation:nth-child(2){/*준비물 박스마다 간격*/
+            margin-left: 4px;
+        }
+        .each_preparation a{/*준비물 추가된 박스안에 있는 'x'*/
+            margin-left: 10px;
+        }
+        .each_preparation a:hover{/*준비물 추가된 박스 오버시*/
+            cursor: pointer;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+        .preparation_box{/*각 준비물 박스를 담는 부모*/
+            float: right;
+            width: 431px;
+        }
+        .add_box_input{/*준비물 input*/
+            width: 200px;
+            height: 30px;
+            float: left;
+        }
+        .add_btn{ /*준비물 input 옆 '추가' 버튼*/
+            display: inline-block;
+            width: 50px;
+            height: 36px;
+            border: none;
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            text-align: center;
+            line-height: 36px;
+            background-color: #FF9100;
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .add_btn:hover{ /*준비물 input 옆 '추가' 버튼 오버시*/
+            cursor: pointer;
+            box-shadow:1px 1px 1px 1px #999;
+        }
+
+    </style>
+</head>
+<body>
+<!-- header -->
+<div id="header"><!--header start-->
+    <div class="inner">
+        <div class="header_logo_search"><!--header_left start-->
+            <img src="img/logo.png" alt="saemo logo" title="saemo logo" />
+            <form class="header_search"><!--header_search-->
+                <fieldset><!--fieldset-->
+                    <legend class="screen_out">검색</legend>
+                    <input placeholder="검색어를 입력하세요." maxlength="10" />
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </fieldset><!--//header_search-->
+            </form><!--//#form -->
+        </div><!--//header_left end-->
+        <div class="header_crew_list_meeting_status"><!--header_right start-->
+            <div class="header_crew_list"><!--header_crew_list-->
+                <ul>
+                    <li><a href="/"><img class="header_crew_list_on" src="img/category1.jpg" width="40" height="40" /></a></li>
+                    <li><a href="/"><img src="img/category2.jpg" width="40" height="40" /></a></li>
+                    <li><a href="/"><img src="img/category3.jpg" width="40" height="40" /></a></li>
+                </ul>
+            </div><!--//header_crew_list -->
+            <div class="header_meeting_home"><a href=""><i class="far fa-handshake"></i></a></div>
+            <div class="header_status"><a href=""><i class="fas fa-user-circle"></i></a></div>
+            <div class="header_status_dropbox">
+                <h3 class="screen_out">내메뉴</h3>
+                <ul>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="">로그아웃</a></li>
+                </ul>
+            </div>
+        </div><!--//header_right end-->
+    </div><!--// inner end-->
+</div><!--//header end-->
+<!-- //header -->
+<!-- container -->
+<div id="container">
+    <!-- content -->
+    <div id="content">
+
+        <form>
+            <div class="form_title"><h1>모임 개설하기</h1></div>
+            <table>
+                <tr>
+                    <td class="first_td">모임 이름</td>
+                    <td class="second_td">
+                        <input type="text" maxlength="20" class="input_style1 v1">
+                        <span class="counting_characters v1_v">(0/20자)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first_td">날짜</td>
+                    <td class="second_td">
+                        <input type="date" class="date_input">
+                        <input type="time" class="input_time">
+                        <span class="">~</span>
+                        <input type="time" class="input_time">
+                        <label class="check_date"><input type="checkbox">하루종일</label>
+                    </td>
+                </tr>
+                <tr class="local_input">
+                    <td class="first_td">장소</td>
+                    <td class="second_td">
+                        <input class="input_style1">
+                        <input class="input_style1">
+                    </td>
+                </tr>
+                <tr class="detail_input">
+                    <td class="first_td">상세</td>
+                    <td class="second_td">
+                        <textarea maxlength="100" class="v2"></textarea>
+                        <span class="counting_characters v2_v">(0/100자)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first_td">회비</td>
+                    <td class="second_td">
+                        <input class="input_style1">
+                        <span class="span_one">원</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first_td">준비물</td>
+                    <td class="second_td">
+                        <form class="add_box_form12">
+                            <input placeholder="최대 2개" maxlength="10" class="add_box_input v3">
+                            <a class="add_btn">추가</a>
+                        </form>
+                        <span class="counting_characters v3_v">(0/10자)</span>
+                        <div class="preparation_box">
+                            <div class="each_preparation">
+                                <span>가가가가가가가가가가</span>
+                                <a><i class="fas fa-times"></i></a>
+                            </div>
+                            <div class="each_preparation">
+                                <span>가가가가가가가가가가</span>
+                                <a><i class="fas fa-times"></i></a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <button class="create_end_btn">모임 만들기</button>
+                <div class="local_map"></div>
+            </table>
+        </form>
+    </div>
+    <!-- //content -->
+</div>
+<!-- //container -->
+<div id="footer"><!--//footer start-->
+    <div class="inner"><!--//inner start-->
+        <ul class="footer_container_help"><!--// footer_conatiner_left start-->
+            <li><a href="">이용약관</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">회사소개</a></li>
+        </ul><!--// footer_conatiner_left end-->
+        <div class="footer_container_company_name clear_fix">
+            <span> &copy; 두괄</span>
+        </div><!--// footer_conatiner_start end-->
+        <dl>
+            <dt>
+                <address class="footer_address">주소 : 서울특별시 관악구 봉천로 72-6 7층</address>
+            </dt>
+            <dt>
+                <div class="footer_phone_num">전화번호 : 02-123-1234</div>
+            </dt>
+        </dl>
+
+
+    </div><!--//footer_container end-->
+</div><!--//footer end-->
+<script src="js/jquery.js"></script>
+<script>
+    //textarea 내에 글자수 세기
+    $('.v1').keyup(function (e){
+        let content = $(this).val();
+        $('.v1_v').text("("+content.length+" /20자)");    //글자수 실시간 카운팅
+    });
+    $('.v2').keyup(function (e){
+        let content = $(this).val();
+        $('.v2_v').text("("+content.length+" /100자)");    //글자수 실시간 카운팅
+    });
+    $('.v3').keyup(function (e){
+        let content = $(this).val();
+        $('.v3_v').text("("+content.length+" /10자)");    //글자수 실시간 카운팅
+    });
+    //end textarea 내에 글자수 세기
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/tui-date-picker.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <style>
+        .foot{
+            font-size: 32px;
+            margin : 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="code-html">
+    <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+        <input type="text" id="datepicker-input" aria-label="Date-Time">
+        <span class="tui-ico-date"></span>
+    </div>
+
+    <div id="wrapper" style="margin-top: -1px;"></div>
+</div>
+
+<script src="js/tui-date-picker.min.js"></script>
+<script>
+    const datepicker = new tui.DatePicker('#wrapper',{
+        date: new Date(),
+        input: {
+            element: '#datepicker-input',
+            format: 'yyyy-MM-dd'
+        },
+        showAlways: true,
+        language: 'ko'
+    });
+
+</script>
+</body>
+</html>

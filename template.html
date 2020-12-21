@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+</head>
+<body>
+<div id="header"><!--header start-->
+    <div class="inner">
+        <div class="header_logo_search"><!--header_left start-->
+            <img src="img/logo.png" alt="saemo logo" title="saemo logo" />
+            <form class="header_search"><!--header_search-->
+                <fieldset><!--fieldset-->
+                    <legend class="screen_out">검색</legend>
+                    <input placeholder="검색어를 입력하세요." maxlength="10" />
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </fieldset><!--//header_search-->
+            </form><!--//#form -->
+        </div><!--//header_left end-->
+        <div class="header_crew_list_meeting_status"><!--header_right start-->
+            <div class="header_crew_list"><!--header_crew_list-->
+                <ul>
+                    <li><a href="/"><img class="header_crew_list_on" src="img/category1.jpg" width="40" height="40" /></a></li>
+                    <li><a href="/"><img src="img/category2.jpg" width="40" height="40" /></a></li>
+                    <li><a href="/"><img src="img/category3.jpg" width="40" height="40" /></a></li>
+                </ul>
+            </div><!--//header_crew_list -->
+            <div class="header_meeting_home"><a href=""><i class="far fa-handshake"></i></a></div>
+            <div class="header_status"><a href=""><i class="fas fa-user-circle"></i></a></div>
+            <div class="header_status_dropbox">
+                <h3 class="screen_out">내메뉴</h3>
+                <ul>
+                    <li><a href="">마이페이지</a></li>
+                    <li><a href="">로그아웃</a></li>
+                </ul>
+            </div>
+        </div><!--//header_right end-->
+    </div><!--// inner end-->
+</div><!--//header end-->
+<div id="container"><!--container start-->
+
+</div><!--//container end-->
+<div id="footer"><!--//footer start-->
+    <div class="inner"><!--//inner start-->
+        <ul class="footer_container_help"><!--// footer_conatiner_left start-->
+            <li><a href="">이용약관</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">회사소개</a></li>
+        </ul><!--// footer_conatiner_left end-->
+        <div class="footer_container_company_name clear_fix">
+            <span> &copy; 두괄</span>
+        </div><!--// footer_conatiner_start end-->
+        <dl>
+            <dt>
+                <address class="footer_address">주소 : 서울특별시 관악구 봉천로 72-6 7층</address>
+            </dt>
+            <dt>
+                <div class="footer_phone_num">전화번호 : 02-123-1234</div>
+            </dt>
+        </dl>
+
+
+    </div><!--//footer_container end-->
+</div><!--//footer end-->
+<script src="js/jquery.js"></script>
+<script>
+    const $headerStatus = $('.header_status');
+    const $headerStatusDropbox = $('.header_status_dropbox');
+    $headerStatus.click(function (e) {
+        e.preventDefault();
+        $headerStatusDropbox.toggleClass("show");
+    });
+</script>
+</body>
+</html>

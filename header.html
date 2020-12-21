@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>헤더</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/default.css"/>
+    <style>
+        #container{
+            margin-top: 101px;
+            height: 500px;
+            position:relative;
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="wrap">
+    <div id="header"><!--header start-->
+        <div class="header_left"><!--header_left start-->
+            <img src="img/logo.png" alt="saemo logo" title="saemo logo" />
+            <form class="header_search"><!--header_search-->
+                <fieldset><!--fieldset-->
+                    <legend class="screen_out">검색</legend>
+            <input placeholder="검색어를 입력하세요." maxlength="10" />
+            <button type="submit"><i class="fas fa-search"></i></button>
+            </fieldset><!--//header_search-->
+            </form><!--//form -->
+        </div><!--//header_left end-->
+        <div class="header_right"><!--header_right start-->
+            <div class="header_crew_list"><!--header_crew_list start-->
+                <ul>
+                    <li><a href="/"><img class="header_crew_list_on" src="img/knit.jpg" width="40" height="40" /></a></li>
+                    <li><a href="/"><img src="img/restaurant.jpg" width="40" height="40" /></a></li>
+                    <li><a href="/"><img src="img/knit.jpg" width="40" height="40" /></a></li>
+                </ul>
+            </div><!--//header_crew_list -->
+            <div class="header_meeting_home"><a href=""><i class="far fa-handshake"></i></a></div>
+            <div class="header_status"><a href=""><i class="fas fa-user-circle"></i></a></div>
+            <div class="header_status_dropbox">
+                <div><a href="">마이페이지</a></div>
+                <div><a href="">로그아웃</a></div>
+            </div>
+        </div><!--//header_right end-->
+    </div><!--//header end-->
+    <div id="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        SAEMO 회원가입</div>
+
+    <div id="footer"><!--//footer start-->
+        <div class="footer_container clear_fix" ><!--//#div start-->
+            <ul class="footer_container_left"><!--// footer_conatiner_left start-->
+                <li><a href="">이용약관</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">회사소개</a></li>
+            </ul><!--// footer_conatiner_left end-->
+            <div class="footer_container_right">
+                <span>CopyRight &copy;두괄</span>
+            </div><!--// footer_conatiner_start end-->
+        </div><!--//footer_container end-->
+        <div>주소 : 서울특별시 관악구 봉천로 72-6 7층</div>
+        <div>전화번호 : 02-123-1234</div>
+    </div><!--//footer end-->
+</div>
+<script src="js/jquery.js"></script>
+<script>
+    const $status = $('.header_status');
+    const $statusDropbox = $('.header_status_dropbox');
+    $status.on("click",function (e) {
+        e.preventDefault();
+        $statusDropbox.toggleClass("dropbox_on");
+    })
+</script>
+</body>
+
+</html>

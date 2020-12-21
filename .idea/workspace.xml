@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="05598bb2-dcf1-4913-bd2e-f7cdbb63f584" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../front_end/1205/1_array.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front_end/1205/2_map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front_end/1205/3_filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../front_end/1205/4_spliceANDslice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/name.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category_choose.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crewDetailPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/crewDetailPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/default2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/default3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/step1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/step2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/tui-date-picker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/category1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/category2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/category3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/category4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/category5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/category6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/category7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/category8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/category9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/step1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/step2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tui-date-picker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pop_write.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/모임만들기.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/모임상세.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../front_end/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front_end/0909/6_요소의생성.html" beforeDir="false" afterPath="$PROJECT_DIR$/../front_end/0909/6_요소의생성.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1lOo1C8MsxviZ2Ol7sbFmvOkp7P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
+      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\css" />
+      <recent name="C:\Users\E\WebstormProjects\untitled1\js" />
+      <recent name="C:\Users\E\WebstormProjects\untitled1\css" />
+      <recent name="C:\Users\E\WebstormProjects\untitled1\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
+      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\ajax" />
+      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\css" />
+      <recent name="C:\Users\E\WebstormProjects\untitled1" />
+      <recent name="C:\Users\E\WebstormProjects\untitled1\img" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05598bb2-dcf1-4913-bd2e-f7cdbb63f584" name="Default Changelist" comment="" />
+      <created>1607477281916</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607477281916</updated>
+      <workItem from="1607477283649" duration="576000" />
+      <workItem from="1607477879975" duration="12657000" />
+      <workItem from="1608199604298" duration="2157000" />
+      <workItem from="1608247140171" duration="6705000" />
+      <workItem from="1608254064121" duration="13030000" />
+      <workItem from="1608282283469" duration="426000" />
+      <workItem from="1608282729281" duration="1562000" />
+      <workItem from="1608365843361" duration="3519000" />
+      <workItem from="1608434693313" duration="7306000" />
+      <workItem from="1608502824072" duration="8967000" />
+      <workItem from="1608516795685" duration="7752000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608257994106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608257994106" />
+    <state x="712" y="326" key="FileChooserDialogImpl" timestamp="1608438519923">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="712" y="326" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608438519923" />
+    <state x="2381" y="164" key="SettingsEditor" timestamp="1608516983989">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2381" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608516983989" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1608525888860">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608525888860" />
+    <state x="2601" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1608517911805">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2601" y="431" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608517911805" />
+  </component>
+</project>
