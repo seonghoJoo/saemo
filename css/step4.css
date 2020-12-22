@@ -48,3 +48,12 @@
 .add_subjective_question{
     margin-bottom: 10px;
 }
+
+.next_btn_step4{
+    width: 200px;
+    height: 50px;
+    background-color: #FF6333;
+    color: #fff;
+    outline: none;
+    border: none;
+}

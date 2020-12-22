@@ -53,10 +53,12 @@
         }
 
         .msg{
+            font-size: 12px;
             margin-top:5px;
             display: none;
         }
         .msg.ok{
+            font-size: 12px;
             margin-top: 5px;
             display: block;
             color:#FF1744;
@@ -506,11 +508,11 @@
                     <div class="qualification_write_box">
                         <div class="content_qualification_write_box"><!--content_qualification_write_box start-->
                             <h2>크루장님이 원하시는 크루 가입조건을 설정해주세요</h2>
-                            <div class="add_multiple_choice_question"><h2><a><i class="far fa-plus-square"></i> 객관식 질문 추가</a></h2></div>
+                            <div class="add_multiple_choice_question"><h2><a href=""><i class="far fa-plus-square"></i> 객관식 질문 추가</a></h2></div>
                             <dl class="add_multiple_choice_question_list"></dl>
-                            <div class="add_subjective_question"><h2><a><i class="far fa-plus-square"></i> 단답형 질문 추가</a></h2></div>
+                            <div class="add_subjective_question"><h2><a href=""><i class="far fa-plus-square"></i> 단답형 질문 추가</a></h2></div>
                             <dl class="add_subjective_question_list"></dl>
-                            <div class="add_file_attachment_question"><h2><a><i class="far fa-plus-square"></i> 파일 첨부 질문 추가</a></h2></div>
+                            <div class="add_file_attachment_question"><h2><a href=""><i class="far fa-plus-square"></i> 파일 첨부 질문 추가</a></h2></div>
                             <dl class="add_file_attachment_question_list"></dl>
                         </div><!--//content_qualification_write_box end-->
                         <div class="content_description_box">
@@ -538,7 +540,7 @@
 
                     <div class="crew_create_btn_box">
                         <button type="button" class="prev_btn"><a>이전</a></button>
-                        <button type="button" class="next_btn next_btn_step4">제출</button>
+                        <button type="submit" class="next_btn next_btn_step4">제출</button>
                     </div>
                 </div><!--//inner end-->
             </div><!--//step4 end-->
@@ -577,24 +579,18 @@
 <script src="js/step2.js"></script>
 <script src="js/step3.js"></script>
 <script src="js/step4.js"></script>
+<script src="js/underscore-min.js"></script>
 <script>
-
-
-
     const $nameMsg = $('#nameMsg');
     const $populationMsg = $('#populationMsg');
-
     const $prevBtn = $('.prev_btn');
     const $nextBtn = $('.next_btn');
-
     const $nextBtnStep2 = $('.next_btn_step2');
     const $nextBtnStep3 = $('.next_btn_step3');
-
     /* step change start*/
     let idx = 1;
     let progress=25;
     console.log(idx);
-
 
     $('.next_btn').click(changeStep);
 
@@ -614,8 +610,9 @@
         $(".step_progressbar").css("width",""+ progress +"%");
         console.log(idx);
     };
+    /* step change end*/
 
-
+    /*step4 start*/
     const $addMultipleChoiceQuestion = $('.add_multiple_choice_question');
     const $addSubjectiveQuestion = $('.add_subjective_question');
     const $addFileAttachmentQuestion = $('.add_file_attachment_question');
@@ -623,6 +620,7 @@
     let question=0;
     $addMultipleChoiceQuestion.click(function (e) {
         e.preventDefault();
+        console.log("addMultiplcChoiceQuestion click");
         _.each(json,function(music,idx){
             const $dl = $('<dl>');
             const $dt = $('<dt>');
@@ -642,7 +640,7 @@
 
        const dl = $("<dl></dl>");
     });
-
+    /*step4 end*/
 </script>
 </body>
 </html>
