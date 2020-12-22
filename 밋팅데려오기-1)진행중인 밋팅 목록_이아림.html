@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>밋팅 데려오기</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/default.css" />
+
+    <style>
+        body{
+            font-family: 'NIXGONM-Vb';
+        }
+
+        #ongoingMeetingPop{
+            overflow: hidden;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -296px;
+            margin-top: -241px;
+            width: 590px;
+            height: 480px;
+            border: 1px solid #424242;
+            text-align: center;
+        }
+        #ongoingMeetingPop h1{
+            margin-top: 40px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .fa-chevron-left{
+            color: #ff6333;
+            font-size: 20px;
+            position: absolute;
+            left: 0px;
+            top: 241px;
+            z-index: 10;
+            cursor:pointer;
+        }
+        .fa-chevron-right{
+            color: #ff6333;
+            font-size: 20px;
+            position: absolute;
+            right: 0px;
+            top: 241px;
+            z-index: 10;
+            cursor:pointer;
+        }
+        .fa-times{
+            cursor:pointer;
+            right: 10px;
+            position: absolute;
+            font-size: 30px;
+        }
+        .fa-check{
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 15px;
+            font-size: 125px;
+            color: #00bcd4;
+            z-index: -10;
+        }
+
+        .ongoing_meeting_box{
+            margin-top: 60px;
+            width: 1000px;
+            height: 250px;
+            transition: 0.3s cubic-bezier(0,.76,.46,.97);
+        }
+        .ongoing_meeting_box li{
+            float:left;
+            width: 156px;
+            margin-left: 32px;
+        }
+        .ongoing_meeting_box img:hover{
+            opacity: 0.3;
+        }
+        .ongoing_meeting_box img{
+            border-radius: 50%;
+        }
+       .crew_name{
+           width:156px;
+            height: 24px;
+           line-height: 24px;
+           margin-top: 10px;
+           margin-bottom: 20px;
+        }
+       .meeting_name{
+           width: 156px;
+           font-size: 16px;
+       }
+
+
+    </style>
+</head>
+<body>
+<!--레이아웃은 다 id 선택자로 -->
+<div id="ongoingMeetingPop"><!--ongoingMeetingPop start-->
+    <button><i class="fas fa-times"></i></button>
+        <h1>진행중인 밋팅 목록</h1>
+    <div class="ongoing_meeting_box"><!--ongoing_meeting_box start-->
+        <button class="fas fa-chevron-left"></button>
+        <button class="fas fa-chevron-right"></button>
+        <ul class="ongoing_meeting_list">
+            <li><a href=""><i class="fas fa-check"></i>
+                    <img src="img/birds-of-chicago-2213662_1920.jpg" width="156" height="156"/>
+                    <div class="crew_name"><p>음악은 소통</p></div>
+                    <div class="meeting_name"><p>아름다운 소리는 너</p></div></a></li>
+            <li>
+                <a href=""><i class="fas fa-check"></i>
+                    <img src="img/knit.jpg" width="156" height="156"/>
+                    <div class="crew_name"><p>뜨개뜨개</p></div>
+                    <div class="meeting_name"><p>이너피스 월요일</p></div></a></li>
+            <li><a href=""><i class="fas fa-check"></i>
+                    <img src="img/gallery-2932005_1920.jpg" width="156" height="156"/>
+                    <div class="crew_name"><p>미술관 고고</p></div>
+                    <div class="meeting_name"><p>선관람 후공유</p></div></a></li>
+            <li><a href=""><i class="fas fa-check"></i>
+                <img src="img/gallery-2932005_1920.jpg" width="156" height="156"/>
+                    <div class="crew_name"><p>축구 고</p></div>
+                    <div class="meeting_name"><p>축구하러 가자</p></div></a></li>
+            </li>
+            <li><a href=""><i class="fas fa-check"></i>
+                <img src="img/category4.jpg" width="156" height="156"/>
+                    <div class="crew_name"><p>토익만점가즈아</p></div>
+                    <div class="meeting_name"><p>토익리딩대결</p></div></a></li>
+        </ul>
+    </div><!--//ongoing_meeting_box end-->
+</div><!--//ongoingMeetingPop end-->
+
+<script src="js/jquery.js"></script>
+<script>
+    let x = 0;
+    $(".fa-chevron-right").click(function (){
+        x = x -564;
+        $(".ongoing_meeting_list").css("transform","translate(" + x + "px,0)");
+
+    })//rightBtn end
+    $(".fa-chevron-left").click(function (){
+        x = x +564;
+        $(".ongoing_meeting_list").css("transform","translate(" + x + "px,0)");
+    })//leftBtn end
+</script>
+</body>
+</html>

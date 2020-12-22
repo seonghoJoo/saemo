@@ -209,3 +209,7 @@ body {
 .show{
     display:block;
 }
+
+button,input,textarea,select {
+    font-family: Arial,'NIXGONM-Vb', sans-serif;
+}

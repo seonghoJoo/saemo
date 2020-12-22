@@ -13,16 +13,17 @@ $crewPopulationInput.keyup(function (e) {
 
 });
 
-function nextBtnOn(countFlag){
-    if(countFlag==true){
-        $nextBtn3.css({
-            "background-color": "#FF6333",
-            "color": "#fff"
-        });
-    }else{
-        $nextBtn3.css({
-            "background-color": "#eee",
-            "color": "#000"
-        });
-    }
-}
+// function nextBtnOn(countFlag){
+//     console.log("nextBtnOn step3");
+//     if(countFlag==true){
+//         $nextBtnStep3.css({
+//             "background-color": "#FF6333",
+//             "color": "#fff"
+//         });
+//     }else{
+//         $nextBtnStep3.css({
+//             "background-color": "#eee",
+//             "color": "#000"
+//         });
+//     }
+// }

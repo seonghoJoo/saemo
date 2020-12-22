@@ -7,16 +7,18 @@ const $crew_intro = $('.crew_intro_input');
 /*step2 start*/
 const nameExp = /^[가-힣|a-zA-Z]{2,10}$/;
 const introExp = /^[가-힣|a-zA-z|\d]{0,20}$/;
-let nameFlag = false, crewFlag = false,imgFlag=true;
+let nameFlag = false, crewFlag = true,imgFlag=true;
 $crew_name.keyup(function (e) {
 
     let val = $crew_name.val();
     $crewNameLenLimit.text("("+val.length+" / 10자)");    //글자수 실시간 카운팅
     if(nameExp.test(val)){
         //ajax를 사용하여 중복체크
+        console.log("true: "+val);
         nameFlag = true;
         nextBtnOn(nameFlag,crewFlag,imgFlag);
     }else{
+        console.log("false: "+val);
         nameFlag = false;
         nextBtnOn(nameFlag,crewFlag,imgFlag);
     }// if ~ else end
@@ -34,13 +36,15 @@ $crew_intro.keyup(function (e) {
     }// if ~ else end
 });//#$crew_name.onkeydown() end
 function nextBtnOn(nameFlag, crewFlag, imgFlag){
+    console.log("nextBtnOn step2");
     if(nameFlag==true && crewFlag==true && imgFlag==true){
-        $nextBtn2.css({
+        $nextBtnStep2.css({
             "background-color": "#FF6333",
             "color": "#fff"
         });
     }else{
-        $nextBtn2.css({
+        $nextBtnStep2.attr("disabled","disalbe");
+        $nextBtnStep2.css({
             "background-color": "#eee",
             "color": "#000"
         });

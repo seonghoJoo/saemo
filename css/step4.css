@@ -7,10 +7,16 @@
 }
 
 .content_qualification_write_box{
-    width: 860px;
-    min-height: 400px;
+    width: 850px;
+    min-height: 390px;
+    padding:10px 0 0 10px;
     float: left;
     background-color: #4b96e6;
+}
+.content_qualification_write_box > h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 .content_description_box{
     float: left;
@@ -35,4 +41,10 @@
     background-color: #424242;
     text-align: center;
     line-height: 20px;
+}
+.add_multiple_choice_question{
+    margin-bottom: 10px;
+}
+.add_subjective_question{
+    margin-bottom: 10px;
 }

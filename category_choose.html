@@ -24,6 +24,8 @@
         .step3 .step_box:nth-child(2) {display: none}
         .step3 .step_box:nth-child(3) {display: block}
         .step3 .step_box:nth-child(4) {display: none}
+
+
         .step4 .step_box:nth-child(1) {display: none}
         .step4 .step_box:nth-child(2) {display: none}
         .step4 .step_box:nth-child(3) {display: none}
@@ -41,6 +43,42 @@
             width: 25%;
             transition:.5s;
         }
+
+        .prev_btn{
+            width: 200px;
+            height: 50px;
+            background-color: #eeeeee;
+            outline: none;
+            border: none;
+        }
+
+        .crew_image_item input[type="radio"]{
+            display: none;
+        }
+
+        .crew_image_item input[type="radio"]:checked{
+            opacity: 0.3;
+        }
+        .crew_image_item input[type=radio]:checked{
+
+        }
+        .crew_cover_check{
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(255,99,51,.5);
+            display: none;
+        }
+        .crew_cover_check i{
+            position:absolute;
+            left: 50px;
+            top:25px;
+            font-size: 50px;
+            color:#eee;
+        }
+
     </style>
 </head>
 <body>
@@ -81,7 +119,7 @@
 </div><!--//header end-->
 
 
-<div id="container" class="step1"><!--container start-->
+<div id="container" class="step2"><!--container start-->
     <form method="post">
         <fieldset>
             <div class="step_box">
@@ -326,15 +364,49 @@
                             <div class="crew_image_selected">
                                 <img src="img/category1.jpg" width="280" height="220" title="" alt="" />
                             </div>
+
                             <ul class="crew_image_list">
-                                <li class="crew_image_item"><a><img src="img/category1.jpg" width="150" height="100" title="" alt="" /></a></li>
-                                <li class="crew_image_item"><a><img src="img/category2.jpg" width="150" height="100" title="" alt="" /></a></li>
-                                <li class="crew_image_item"><a><img src="img/category3.jpg" width="150" height="100" title="" alt="" /></a></li>
-                                <li class="crew_image_item"><a><img src="img/category4.jpg" width="150" height="100" title="" alt="" /></a></li>
-                                <li class="crew_image_item"><a><img src="img/category5.jpg" width="150" height="100" title="" alt="" /></a></li>
-                                <li class="crew_image_item"><a><img src="img/category6.jpg" width="150" height="100" title="" alt="" /></a></li>
-                                <li class="crew_image_item"><a><img src="img/category7.jpg" width="150" height="100" title="" alt="" /></a></li>
-                                <li class="crew_image_item"><a><img src="img/category1.jpg" width="150" height="100" title="" alt="" /></a></li>
+                                <li class="crew_image_item">
+                                    <input id="category_image_item1" checked="checked" name="image_item" type="radio" value="1"/>
+                                    <label for="category_image_item1">
+                                        <img src="img/category1.jpg" width="150" height="100" data-src="img/category1.jpg" title="" alt="" />
+                                        <div class="crew_cover_check">
+                                            <i class="fas fa-check"></i>
+                                            <div class="check_on"></div>
+                                        </div>
+                                    </label>
+                                </li>
+
+                                <li class="crew_image_item">
+                                    <input id="category_image_item2" checked="checked" name="image_item" type="radio" value="2"/>
+                                    <label for="category_image_item2">
+                                        <img src="img/category2.jpg" width="150" height="100" data-src="img/category2.jpg" title="" alt="" />
+                                        <div class="crew_cover_check">
+                                            <i class="fas fa-check"></i>
+                                            <div class="check_on"></div>
+                                        </div>
+                                    </label>
+                                </li>
+
+                                <li class="crew_image_item">
+                                    <input id="category_image_item3" checked="checked" name="image_item" type="radio" value="1"/>
+                                    <label for="category_image_item3">
+                                        <img src="img/category3.jpg" width="150" height="100" data-src="img/category3.jpg" title="" alt="" />
+                                        <div class="crew_cover_check">
+                                            <i class="fas fa-check"></i>
+                                            <div class="check_on"></div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="crew_image_item"><a><img src="img/category4.jpg" width="150" height="100" data-src="img/category4.jpg" title="" alt="" /></a></li>
+                                <li class="crew_image_item"><a><img src="img/category5.jpg" width="150" height="100" data-src="img/category5.jpg" title="" alt="" /></a></li>
+                                <li class="crew_image_item"><a><img src="img/category6.jpg" width="150" height="100" data-src="img/category6.jpg" title="" alt="" /></a></li>
+                                <li class="crew_image_item"><a><img src="img/category7.jpg" width="150" height="100" data-src="img/category7.jpg" title="" alt="" /></a></li>
+                                <li class="crew_image_item">
+                                    <input id="category_image_item8" name="image_item" type="file" value="4"/>
+
+                                    <i class="fas fa-check"></i>
+                                </li>
                             </ul>
                         </div>
                     </div><!--crew_create_cover_box-->
@@ -406,40 +478,52 @@
                     </div>
                 </div><!--// inner end -->
             </div><!--//step3 end-->
-            <div class="step_box">
-                <div class="qualification_write_box">
-                    <div class="content_qualification_write_box">
-                        <h2>크루장님이 원하시는 크루 가입조건을 설정해주세요</h2>
+            <div class="step_box"><!--step4 start-->
+                <div>
+                    <div class="qualification_write_box">
+                        <div class="content_qualification_write_box"><!--content_qualification_write_box start-->
+                            <h2>크루장님이 원하시는 크루 가입조건을 설정해주세요</h2>
+                            <div class="add_multiple_choice_question"><h2><a><i class="far fa-plus-square"></i> 객관식 질문 추가</a></h2></div>
+                            <dl class="add_multiple_choice_question_list"></dl>
+                            <div class="add_subjective_question"><h2><a><i class="far fa-plus-square"></i> 단답형 질문 추가</a></h2></div>
+                            <dl class="add_subjective_question_list"></dl>
+                            <div class="add_file_attachment_question"><h2><a><i class="far fa-plus-square"></i> 파일 첨부 질문 추가</a></h2></div>
+                            <dl class="add_file_attachment_question_list"></dl>
+                        </div><!--//content_qualification_write_box end-->
+                        <div class="content_description_box">
+                            <h4>예시)</h4><!--제목 h4-->
+                            <!--dl-->
+                            <dl>
+                                <dt><h5>1. 연봉은 어떻게 되시나요?</h5></dt><!-- dt-->
+                                <dd class="description_star">* 객관식 질문</dd><!--dd-->
+                                <dd><i class="fas fa-check-circle"></i> 2000~3000만원</dd>
+                                <dd><i class="fas fa-check-circle"></i> 3000~4000만원</dd>
+                                <dd><i class="fas fa-check-circle"></i> 4000~5000만원</dd>
+                                <dd><i class="fas fa-check-circle"></i> 5000만원 이상</dd>
 
+
+                                <dt><h5>2. 직업은 어떻게 되시나요?</h5></dt>
+                                <dd class="description_star">* 단답형형 질문</dd>
+                                <dd>(연봉 2400 이하 지원 금지)</dd>
+
+                                <dt><h5>3. 귀하의 사진을 첨부해주세요</h5></dt>
+                                <dd class="description_star">* 파일첨부 질문</dd>
+                                <dd class="description_file">파일 업로드</dd>
+                            </dl>
+                        </div><!--// content_description_box end-->
+                    </div><!--//qualification_write_box end-->
+
+                    <div class="crew_create_btn_box">
+                        <button type="button" class="prev_btn"><a>이전</a></button>
+                        <button type="button" class="next_btn next_btn_step4">제출</button>
                     </div>
-                    <div class="content_description_box">
-                        <h4>예시)</h4><!--제목 h4-->
-                        <!--dl-->
-                        <dl>
-                            <dt><h5>1. 연봉은 어떻게 되시나요?</h5></dt><!-- dt-->
-                            <dd class="description_star">* 객관식 질문</dd><!--dd-->
-                            <dd><i class="fas fa-check-circle"></i> 2000~3000만원</dd>
-                            <dd><i class="fas fa-check-circle"></i> 3000~4000만원</dd>
-                            <dd><i class="fas fa-check-circle"></i> 4000~5000만원</dd>
-                            <dd><i class="fas fa-check-circle"></i> 5000만원 이상</dd>
-
-
-                            <dt><h5>2. 직업은 어떻게 되시나요?</h5></dt>
-                            <dd class="description_star">* 단답형형 질문</dd>
-                            <dd>(연봉 2400 이하 지원 금지)</dd>
-
-                            <dt><h5>3. 귀하의 사진을 첨부해주세요</h5></dt>
-                            <dd class="description_star">* 파일첨부 질문</dd>
-                            <dd class="description_file">파일 업로드</dd>
-                        </dl>
-                    </div><!--// content_description_box end-->
-                </div><!--//qualification_write_box end-->
+                </div><!--//inner end-->
             </div><!--//step4 end-->
        </fieldset>
 
     </form>
 
-    <div class="step_box step4"></div>
+<!--    <div class="step_box step4"></div>-->
 
 </div><!--// container end-->
 <div id="footer"><!--//footer start-->
@@ -472,16 +556,42 @@
 <script src="js/step4.js"></script>
 <script>
 
+    /*step2 start*/
+    const $crewImageItem = $('.crew_image_item');
+    const $crewImageItemInput = $('.crew_image_item input');
+    const $crewImageSelectedImg = $('.crew_image_selected img');
 
+    $crewImageItem.click(function (e) {
+        console.log("click");
+        $(this).children().next().next().toggleClass("show");
+        // let src = $(this).children().next().children().data("src");
+        // console.log(src);
+        // $crewImageSelectedImg.attr("src", src);
+        // console.log($(this).children().next().next().css('display'));
+        // const $display = $(this).children().next().next().css('display');
+        //
+        // if($display == 'block'){
+        //     $(this).children().next().next().css('display','none');
+        //     $(this).children().next().children().css("opacity","1");
+        // }else{
+        //     $(this).children().next().next().css('display','block');
+        //     $(this).children().next().children().css("opacity","0.3");
+        // }
+        return false;
+    });
 
+    /*step2 end*/
     const $prevBtn = $('.prev_btn');
     const $nextBtn = $('.next_btn');
 
+    const $nextBtnStep2 = $('.next_btn_step2');
+    const $nextBtnStep3 = $('.next_btn_step3');
 
     /* step change start*/
     let idx = 1;
     let progress=25;
     console.log(idx);
+
 
     $('.next_btn').click(changeStep);
 
@@ -501,6 +611,35 @@
         $(".step_progressbar").css("width",""+ progress +"%");
         console.log(idx);
     };
+
+
+    const $addMultipleChoiceQuestion = $('.add_multiple_choice_question');
+    const $addSubjectiveQuestion = $('.add_subjective_question');
+    const $addFileAttachmentQuestion = $('.add_file_attachment_question');
+
+    let question=0;
+    $addMultipleChoiceQuestion.click(function (e) {
+        e.preventDefault();
+        _.each(json,function(music,idx){
+            const $dl = $('<dl>');
+            const $dt = $('<dt>');
+            const $label = $('<label>');
+            const $input = $('<input>');
+
+        });
+
+    });
+
+    $addSubjectiveQuestion.click(function () {
+       e.preventDefault();
+       const dt = $("<dt>" +
+           "<label for=\"\"></label>"+
+           "<input placeholder='질문명을 입력해 주세요'/>" +
+           "</dt>");
+
+       const dl = $("<dl></dl>");
+    });
+
 </script>
 </body>
 </html>
