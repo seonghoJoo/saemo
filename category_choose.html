@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/step3.css"/>
     <link rel="stylesheet" href="css/step4.css"/>
     <style>
-        /*2020-12-17 주성호*/
+        /*2020-12-17 주성호 step 변화*/
         .step1 .step_box:nth-child(1) {display: block}
         .step1 .step_box:nth-child(2) {display: none}
         .step1 .step_box:nth-child(3) {display: none}
@@ -52,31 +52,14 @@
             border: none;
         }
 
-        .crew_image_item input[type="radio"]{
+        .msg{
+            margin-top:5px;
             display: none;
         }
-
-        .crew_image_item input[type="radio"]:checked{
-            opacity: 0.3;
-        }
-        .crew_image_item input[type=radio]:checked{
-
-        }
-        .crew_cover_check{
-            width: 150px;
-            height: 100px;
-            position: absolute;
-            left: 0;
-            top: 0;
-            background-color: rgba(255,99,51,.5);
-            display: none;
-        }
-        .crew_cover_check i{
-            position:absolute;
-            left: 50px;
-            top:25px;
-            font-size: 50px;
-            color:#eee;
+        .msg.ok{
+            margin-top: 5px;
+            display: block;
+            color:#FF1744;
         }
 
     </style>
@@ -117,9 +100,7 @@
         <div class="step_progressbar"></div>
     </div>
 </div><!--//header end-->
-
-
-<div id="container" class="step2"><!--container start-->
+<div id="container" class="step1"><!--container start-->
     <form method="post">
         <fieldset>
             <div class="step_box">
@@ -159,7 +140,7 @@
                                     </li>
                                     <li class="category_detail_item">
                                         <input id="category_detail_item5" name="board_item" type="radio" value="5"/>
-                                        <h4><label for="category_detail_item5">해외여행</label></h4>
+                                        <h4><label for="category_detail_item5">국내여행</label></h4>
                                     </li>
                                     <li class="category_detail_item">
                                         <input id="category_detail_item6" name="board_item" type="radio" value="6"/>
@@ -357,6 +338,7 @@
                         <label><h2>크루이름</h2>
                             <input class="crew_name_input" placeholder="크루이름 입력" maxlength="10"/><span class="crew_name_len_limit">최소2자/최대10자</span>
                         </label>
+                        <p id="nameMsg" class="msg">최소 2자 입력해주세요</p>
                     </div>
                     <div class="crew_create_cover_box">
                         <h2>크루 커버사진</h2>
@@ -378,7 +360,7 @@
                                 </li>
 
                                 <li class="crew_image_item">
-                                    <input id="category_image_item2" checked="checked" name="image_item" type="radio" value="2"/>
+                                    <input id="category_image_item2" name="image_item" type="radio" value="2"/>
                                     <label for="category_image_item2">
                                         <img src="img/category2.jpg" width="150" height="100" data-src="img/category2.jpg" title="" alt="" />
                                         <div class="crew_cover_check">
@@ -389,7 +371,7 @@
                                 </li>
 
                                 <li class="crew_image_item">
-                                    <input id="category_image_item3" checked="checked" name="image_item" type="radio" value="1"/>
+                                    <input id="category_image_item3" name="image_item" type="radio" value="1"/>
                                     <label for="category_image_item3">
                                         <img src="img/category3.jpg" width="150" height="100" data-src="img/category3.jpg" title="" alt="" />
                                         <div class="crew_cover_check">
@@ -398,10 +380,50 @@
                                         </div>
                                     </label>
                                 </li>
-                                <li class="crew_image_item"><a><img src="img/category4.jpg" width="150" height="100" data-src="img/category4.jpg" title="" alt="" /></a></li>
-                                <li class="crew_image_item"><a><img src="img/category5.jpg" width="150" height="100" data-src="img/category5.jpg" title="" alt="" /></a></li>
-                                <li class="crew_image_item"><a><img src="img/category6.jpg" width="150" height="100" data-src="img/category6.jpg" title="" alt="" /></a></li>
-                                <li class="crew_image_item"><a><img src="img/category7.jpg" width="150" height="100" data-src="img/category7.jpg" title="" alt="" /></a></li>
+
+                                <li class="crew_image_item">
+                                    <input id="category_image_item4" name="image_item" type="radio" value="4"/>
+                                    <label for="category_image_item4">
+                                        <img src="img/category4.jpg" width="150" height="100" data-src="img/category4.jpg" title="" alt="" />
+                                        <div class="crew_cover_check">
+                                            <i class="fas fa-check"></i>
+                                            <div class="check_on"></div>
+                                        </div>
+                                    </label>
+                                </li>
+
+                                <li class="crew_image_item">
+                                    <input id="category_image_item5" name="image_item" type="radio" value="5"/>
+                                    <label for="category_image_item5">
+                                        <img src="img/category5.jpg" width="150" height="100" data-src="img/category5.jpg" title="" alt="" />
+                                        <div class="crew_cover_check">
+                                            <i class="fas fa-check"></i>
+                                            <div class="check_on"></div>
+                                        </div>
+                                    </label>
+                                </li>
+
+                                <li class="crew_image_item">
+                                    <input id="category_image_item6" name="image_item" type="radio" value="6"/>
+                                    <label for="category_image_item6">
+                                        <img src="img/category6.jpg" width="150" height="100" data-src="img/category6.jpg" title="" alt="" />
+                                        <div class="crew_cover_check">
+                                            <i class="fas fa-check"></i>
+                                            <div class="check_on"></div>
+                                        </div>
+                                    </label>
+                                </li>
+
+                                <li class="crew_image_item">
+                                    <input id="category_image_item7" name="image_item" type="radio" value="7"/>
+                                    <label for="category_image_item7">
+                                        <img src="img/category7.jpg" width="150" height="100" data-src="img/category7.jpg" title="" alt="" />
+                                        <div class="crew_cover_check">
+                                            <i class="fas fa-check"></i>
+                                            <div class="check_on"></div>
+                                        </div>
+                                    </label>
+                                </li>
                                 <li class="crew_image_item">
                                     <input id="category_image_item8" name="image_item" type="file" value="4"/>
 
@@ -470,6 +492,7 @@
 
                                 <span class="crew_population_limit">(최소 10명 / 최대 30명)</span>
                             </label>
+                            <p id="populationMsg" class="msg">10이상 숫자 입력!</p>
                         </span>
                     </div><!--//popular_limit_box end-->
                     <div class="crew_create_btn_box">
@@ -556,31 +579,11 @@
 <script src="js/step4.js"></script>
 <script>
 
-    /*step2 start*/
-    const $crewImageItem = $('.crew_image_item');
-    const $crewImageItemInput = $('.crew_image_item input');
-    const $crewImageSelectedImg = $('.crew_image_selected img');
 
-    $crewImageItem.click(function (e) {
-        console.log("click");
-        $(this).children().next().next().toggleClass("show");
-        // let src = $(this).children().next().children().data("src");
-        // console.log(src);
-        // $crewImageSelectedImg.attr("src", src);
-        // console.log($(this).children().next().next().css('display'));
-        // const $display = $(this).children().next().next().css('display');
-        //
-        // if($display == 'block'){
-        //     $(this).children().next().next().css('display','none');
-        //     $(this).children().next().children().css("opacity","1");
-        // }else{
-        //     $(this).children().next().next().css('display','block');
-        //     $(this).children().next().children().css("opacity","0.3");
-        // }
-        return false;
-    });
 
-    /*step2 end*/
+    const $nameMsg = $('#nameMsg');
+    const $populationMsg = $('#populationMsg');
+
     const $prevBtn = $('.prev_btn');
     const $nextBtn = $('.next_btn');
 

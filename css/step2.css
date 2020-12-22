@@ -72,6 +72,7 @@
     width: 150px;
     height: 100px;
     margin:5px;
+    cursor: pointer;
 }
 .crew_create_btn_box{
     text-align: center;
@@ -89,4 +90,39 @@
 .on_background{
     background-color: #FF6333;
     color: red;
+}
+
+.crew_image_item input{
+    width: 150px;
+    height: 100px;
+    background-color: #4b96e6;
+}
+.crew_image_item input[type="radio"]{
+    display: none;
+}
+
+.crew_image_item input[type="radio"]:checked + label .crew_cover_check{
+    display: block;
+}
+.crew_image_item input[type="radio"] + label{
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    display: block;
+}
+.crew_cover_check{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(255,99,51,.5);
+    display: none;
+}
+.crew_cover_check i{
+    position:absolute;
+    left: 50px;
+    top:25px;
+    font-size: 50px;
+    color:#eee;
 }

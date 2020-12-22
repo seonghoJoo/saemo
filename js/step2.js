@@ -11,44 +11,60 @@ let nameFlag = false, crewFlag = true,imgFlag=true;
 $crew_name.keyup(function (e) {
 
     let val = $crew_name.val();
+    val = val.substr(0,10);
     $crewNameLenLimit.text("("+val.length+" / 10자)");    //글자수 실시간 카운팅
     if(nameExp.test(val)){
+        $nameMsg.removeClass("ok");
         //ajax를 사용하여 중복체크
-        console.log("true: "+val);
         nameFlag = true;
-        nextBtnOn(nameFlag,crewFlag,imgFlag);
+        nextBtnOn2(nameFlag,crewFlag,imgFlag);
     }else{
-        console.log("false: "+val);
+        $nameMsg.addClass("ok");
         nameFlag = false;
-        nextBtnOn(nameFlag,crewFlag,imgFlag);
+        nextBtnOn2(nameFlag,crewFlag,imgFlag);
     }// if ~ else end
+
+
 });//#$crew_name.onkeydown() end
 $crew_intro.keyup(function (e) {
     let val = $crew_intro.val();
+    val = val.substr(0,20);
     $crewIntroLenLimit.text("("+val.length+" /20자)");    //글자수 실시간 카운팅
     if(introExp.test(val)){
         //ajax를 사용하여 중복체크
         crewFlag = true;
-        nextBtnOn(nameFlag,crewFlag,imgFlag);
+        nextBtnOn2(nameFlag,crewFlag,imgFlag);
     }else{
         crewFlag = false;
-        nextBtnOn(nameFlag,crewFlag,imgFlag);
+        nextBtnOn2(nameFlag,crewFlag,imgFlag);
     }// if ~ else end
 });//#$crew_name.onkeydown() end
-function nextBtnOn(nameFlag, crewFlag, imgFlag){
+function nextBtnOn2(nameFlag, crewFlag, imgFlag){
     console.log("nextBtnOn step2");
     if(nameFlag==true && crewFlag==true && imgFlag==true){
         $nextBtnStep2.css({
             "background-color": "#FF6333",
             "color": "#fff"
         });
+        $nextBtnStep2.removeAttr('disabled');
+
     }else{
-        $nextBtnStep2.attr("disabled","disalbe");
+        $nextBtnStep2.attr("disabled","disabled");
         $nextBtnStep2.css({
             "background-color": "#eee",
             "color": "#000"
         });
     }
 }
+
+const $crewImageItem = $('.crew_image_item input');
+const $crewImageSelectedImg = $('.crew_image_selected img');
+
+$crewImageItem.change(function (e) {
+    e.preventDefault();
+    let src = $(this).next().children().data("src");
+    console.log(src);
+    $crewImageSelectedImg.attr("src", src);
+});
 
 /*step2 end*/

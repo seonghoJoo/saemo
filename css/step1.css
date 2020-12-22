@@ -101,7 +101,7 @@
 }
 
 
-.category_detail_list li{
+.category_detail_item{
     margin:2.5px 10px;
     width: 100px;
     height: 30px;
@@ -109,11 +109,18 @@
     line-height: 30px;
     float: left;
     background-color: #FF6333;
-    cursor: pointer;
+
 }
-.category_detail_list li input{
+.category_detail_item input{
     width: 100px;
     height: 30px;
+    display: block;
+}
+.category_detail_item label{
+    width: 100px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
 }
 
 .on{
