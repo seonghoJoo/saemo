@@ -10,7 +10,12 @@
         #container{
             padding-top: 30px;
         }
-        #form
+        #form{
+
+        }
+        #form dd{
+            margin:5px;
+        }
     </style>
 </head>
 <body>
@@ -55,17 +60,21 @@
         <form id="form">
             <fieldset>
             <dl>
-                <dt class="multiple_choice_question1"><span>1</span><h3>.연봉이 어떻게 되시나요?</h3></dt>
+                <dt class="multiple_choice_question1"><span>1</span>.연봉이 어떻게 되시나요?</dt>
                 <dd>
-                    <input type="radio" id="multiple_choice_question1_1" name="multiple_choice_question1"/>
-                    <label for="multiple_choice_question1_1"><h4>4000 미만</h4></label>
+                    <label>
+                        <input type="radio" id="multiple_choice_question1_1" name="multiple_choice_question1"/>
+                        <span>4000 미만</span>
+                    </label>
                 </dd>
                 <dd>
-                    <input type="radio" id="multiple_choice_question1_2" name="multiple_choice_question1"/>
-                    <label for="multiple_choice_question1_2"><h4>4000 이상</h4></label>
+                    <label>
+                        <input type="radio" id="multiple_choice_question1_2" name="multiple_choice_question1"/>
+                        <span>4000 이상</span>
+                    </label>
                 </dd>
 
-                <dt class="multiple_choice_question2"><span>2</span><h3>.성격은 어떤가요?</h3></dt>
+                <dt class="multiple_choice_question2"><span>2</span>.성격은 어떤가요?</dt>
                 <dd>
                     <input type="radio" id="multiple_choice_question2_1" name="multiple_choice_question2"/>
                     <label for="multiple_choice_question2_1"><h4>내성적</h4></label>
