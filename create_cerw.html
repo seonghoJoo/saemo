@@ -16,15 +16,16 @@
         .step1 .step_box:nth-child(2) {display: none}
         .step1 .step_box:nth-child(3) {display: none}
         .step1 .step_box:nth-child(4) {display: none}
+
         .step2 .step_box:nth-child(1) {display: none}
         .step2 .step_box:nth-child(2) {display: block}
         .step2 .step_box:nth-child(3) {display: none}
         .step2 .step_box:nth-child(4) {display: none}
+
         .step3 .step_box:nth-child(1) {display: none}
         .step3 .step_box:nth-child(2) {display: none}
         .step3 .step_box:nth-child(3) {display: block}
         .step3 .step_box:nth-child(4) {display: none}
-
 
         .step4 .step_box:nth-child(1) {display: none}
         .step4 .step_box:nth-child(2) {display: none}
@@ -66,7 +67,16 @@
         form button{
             cursor: pointer;
         }
-
+        .remove_answer{
+            background-color:red;
+        }
+        .remove_question{
+            background-color: blue;
+        }
+        .add_answer_box{
+            background-color: yellowgreen;
+            
+        }
     </style>
 </head>
 <body>
@@ -512,11 +522,15 @@
                         <div class="content_qualification_write_box"><!--content_qualification_write_box start-->
                             <h2>크루장님이 원하시는 크루 가입조건을 설정해주세요</h2>
                             <div class="add_multiple_choice_question"><h2><a href=""><i class="far fa-plus-square"></i> 객관식 질문 추가</a></h2></div>
-                            <dl class="add_multiple_choice_question_list"></dl>
+                            <ul class="add_multiple_choice_question_list">
 
+                            </ul>
+                            <div class="add_answer_box"><span><i class="far fa-plus-square"></i></span></div>
 
                             <div class="add_subjective_question"><h2><a href=""><i class="far fa-plus-square"></i> 단답형 질문 추가</a></h2></div>
-                            <dl class="add_subjective_question_list"></dl>
+                            <dl class="add_subjective_question_list">
+
+                            </dl>
 
 
                             <div class="add_file_attachment_question"><h2><a href=""><i class="far fa-plus-square"></i> 파일 첨부 질문 추가</a></h2></div>
@@ -579,6 +593,38 @@
 
     </div><!--//footer_container end-->
 </div><!--//footer end-->
+
+<script type="text/template" id="multipleChoiceTmpl">
+    <li>
+        <div>
+            <label>
+                <input placeholder='질문명을 입력해 주세요'/>가나다
+            </label>
+            <span class="remove_question">삭제</span>
+            <span class="remove_question">삭제</span>
+            <span class="remove_question">삭제</span>
+        </div>
+        <div>
+            <label>
+                <input for="" placeholder='보기를 적어주세요'/>
+            </label>
+            <span class="remove_answer"><i class="far fa-minus-square"></i></span>
+        </div>
+        <div>
+            <label>
+                <input for="" placeholder='보기를 적어주세요'/>
+                <span class="remove_answer"><i class="far fa-minus-square"></i></span>
+            </label>
+        </div>
+        <div>
+            <label>
+                <input for="" placeholder='보기를 적어주세요'/>
+                <span class="remove_answer"><i class="far fa-minus-square"></i></span>
+            </label>
+        </div>
+    </li>
+</script>
+
 <script src="js/jquery.js"></script>
 <script src="js/default.js"></script>
 <script src="js/step1.js"></script>
@@ -618,45 +664,38 @@
     };
     /* step change end*/
 
+
     /*step4 start*/
     const $addMultipleChoiceQuestion = $('.add_multiple_choice_question');
-    const $addSubjectiveQuestion = $('.add_subjective_question');
-    const $addFileAttachmentQuestion = $('.add_file_attachment_question');
-
+    //const $addSubjectiveQuestion = $('.add_subjective_question');
+    //const $addFileAttachmentQuestion = $('.add_file_attachment_question');
     let question=0;
+    const multipleChoiceTmpl = _.template($('#multipleChoiceTmpl').html());
     const $addMultipleChoiceQuestionList = $('.add_multiple_choice_question_list');
 
     $addMultipleChoiceQuestion.click(function (e) {
         e.preventDefault();
-        const dt = $("<dt>" +
-            "<label for=\"\"></label>"+
-            "<input placeholder='질문명을 입력해 주세요'/>" +
-            "</dt>");
 
-        const dd = $("<dl>" +
-            "<label class=\"screen_out\" for=\"\">세부사항</label>"+
-            "<input placeholder='보기를 적어주세요'/>"+
-            "</dl>");
-        $addMultipleChoiceQuestionList.append(dt,dd);
-        $addMultipleChoiceQuestionList.append(dd,dd);
+        // 필터에 따라서 강의 목록을 불러오는 함수
+        getAddQuestionList();
     });
 
-    const $addFileAttachmentQuestionList = $('.add_file_attachment_question_list');
-    const $addSubjectiveQuestionList = $('.add_subjective_question_list');
-    $addSubjectiveQuestion.click(function (e) {
-       e.preventDefault();
-       const dt = $("<dt>" +
-           "<label for=\"\"></label>"+
-           "<input placeholder='질문명을 입력해 주세요'/>" +
-           "</dt>");
-
-       const dd = $("<dl>" +
-           "<label class=\"screen_out\" for=\"\">세부사항</label>"+
-           "<input placeholder='세부사항을 적어주세요'/>"+
-           "</dl>");
-
-        $addSubjectiveQuestionList.append(dt,dd);
+    function getAddQuestionList(){
+        $addMultipleChoiceQuestionList.append(multipleChoiceTmpl());
+    }//getLectureList() end
+    //const $removeQuestion = $('.remove_question');
+    $(document).on("click", '.remove_question',function (e) {
+        console.log("click");
+       $(this).parent().parent().remove();
     });
+
+
+    const $removeAnswer = $('.remove_answer');
+    $(document).on("click", '.remove_answer',function (e){
+        console.log("click");
+        $(this).parent().remove();
+    })
+
     /*step4 end*/
 </script>
 </body>
