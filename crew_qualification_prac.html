@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자격조건</title>
+    <style>
+        .qualification_write_box{
+            width: 1080px;
+            min-height: 400px;
+            position: relative;
+        }
+
+        .content_qualification_write_box{
+            width: 850px;
+            min-height: 390px;
+            padding:10px 0 0 10px;
+            float: left;
+            background-color: #4b96e6;
+        }
+        .content_qualification_write_box > h2{
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .content_description_box h4{
+            margin-bottom: 15px;
+        }
+
+        .content_description_box dd{
+            margin:10px;
+        }
+
+        .add_multiple_choice_question{
+            margin-bottom: 10px;
+        }
+        .add_subjective_question{
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="step_box"><!--step4 start-->
+    <div>
+        <div class="qualification_write_box">
+            <div class="content_qualification_write_box"><!--content_qualification_write_box start-->
+                <h2>크루장님이 원하시는 크루 가입조건을 설정해주세요</h2>
+                <div class="add_multiple_choice_question"><h2><a href=""><i class="far fa-plus-square"></i> 객관식 질문 추가</a></h2></div>
+                <dl class="add_multiple_choice_question_list"></dl>
+
+
+                <div class="add_subjective_question"><h2><a href=""><i class="far fa-plus-square"></i> 단답형 질문 추가</a></h2></div>
+                <dl class="add_subjective_question_list"></dl>
+
+
+                <div class="add_file_attachment_question"><h2><a href=""><i class="far fa-plus-square"></i> 파일 첨부 질문 추가</a></h2></div>
+                <dl class="add_file_attachment_question_list"></dl>
+            </div><!--//content_qualification_write_box end-->
+        </div><!--//qualification_write_box end-->
+    </div><!--//inner end-->
+</div><!--//step4 end-->
+<script src="js/jquery.js"></script>
+<script>
+    /*step4 start*/
+    const $addMultipleChoiceQuestion = $('.add_multiple_choice_question');
+    const $addSubjectiveQuestion = $('.add_subjective_question');
+    const $addFileAttachmentQuestion = $('.add_file_attachment_question');
+
+    let question=0;
+    const $addMultipleChoiceQuestionList = $('.add_multiple_choice_question_list');
+
+    //$addMultipleChoiceQuestion click start
+    $addMultipleChoiceQuestion.click(function (e) {
+        e.preventDefault();
+        const dt = $("<dt>" +
+            "<label for=\"\"></label>"+
+            "<input placeholder='질문명을 입력해 주세요'/>" +
+            "</dt>");
+
+        const dd = $("<dd>" +
+            "<label class=\"screen_out\" for=\"\">보기 질문</label>"+
+            "<input placeholder='보기를 적어주세요'/>"+
+            "</dd>"+
+            "<dd>" +
+            "<label class=\"screen_out\" for=\"\">보기 질문</label>"+
+            "<input placeholder='보기를 적어주세요'/>"+
+            "</dd>"+
+            "<dd>" +
+            "<label class=\"screen_out\" for=\"\">보기 질문</label>"+
+            "<input placeholder='보기를 적어주세요'/>"+
+            "</dd>"
+        );
+        $addMultipleChoiceQuestionList.append(dt,dd);
+    });
+    //$addMultipleChoiceQuestion click end
+
+
+
+    const $addSubjectiveQuestionList = $('.add_subjective_question_list');
+    //$addSubjectiveQuestion click start
+    $addSubjectiveQuestion.click(function (e) {
+        e.preventDefault();
+        const dt = $("<dt>" +
+            "<label for=\"\"></label>"+
+            "<input placeholder='질문명을 입력해 주세요'/>" +
+            "</dt>");
+
+        const dd = $("<dl>" +
+            "<label class=\"screen_out\" for=\"\">세부사항</label>"+
+            "<input placeholder='세부사항을 적어주세요'/>"+
+            "</dl>");
+
+        $addSubjectiveQuestionList.append(dt,dd);
+    });
+    //$addSubjectiveQuestion click end
+
+
+    const $addFileAttachmentQuestionList = $('.add_file_attachment_question_list');
+
+    /*step4 end*/
+</script>
+</body>
+</html>
