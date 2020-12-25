@@ -8,10 +8,12 @@ const $crew_intro = $('.crew_intro_input');
 const nameExp = /^[가-힣|a-zA-Z]{2,10}$/;
 const introExp = /^[가-힣|a-zA-z|\d]{0,20}$/;
 let nameFlag = false, crewFlag = true,imgFlag=true;
+// input 시 글자 10자 제한
 $crew_name.keyup(function (e) {
 
     let val = $crew_name.val();
     val = val.substr(0,10);
+    $crew_name.val(val);
     $crewNameLenLimit.text("("+val.length+" / 10자)");    //글자수 실시간 카운팅
     if(nameExp.test(val)){
         $nameMsg.removeClass("ok");

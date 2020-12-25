@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/default.css"/>
+    <link rel="stylesheet" href="css/quill.core.css" />
+    <link rel="stylesheet" href="css/quill.snow.css"/>
+    <style>
+        html{
+            background-color: rgba(0,0,0,.5);
+        }
+        #popEdit{
+            width: 630px;
+            min-height: 600px;
+            position: fixed;
+            left: 50%;
+            top:40%;
+            margin: -255px 0 0 -320px;
+            background-color: #fafafa;
+        }
+        .disappear_view{
+            display: none;
+        }
+        #popEdit h2{
+            margin:20px 0;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        #editorContainer {
+            width:610px;
+            padding:0 10px;
+            height: 642px;
+            position: relative;
+        }
+        #editor {
+            padding-left:20px;
+            height:500px;
+        }
+        .ql-toolbar.ql-snow{
+            border: none;
+            border-bottom: 1px solid #424242;
+        }
+        .ql-container.ql-snow{
+            border: none;
+            border-bottom: 1px solid #424242;
+        }
+        .editor_write_images{
+            margin-bottom: 10px;
+        }
+
+        .editor_write_images li{
+            display: inline;
+            margin-right: 20px;
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            color : #424242;
+
+        }
+        label{
+            cursor: pointer;
+        }
+        button{
+            cursor: pointer;
+        }
+        .editor_upload_box{
+            position: absolute;
+            left: 60px;
+            bottom: 0px;
+            margin: 20px 0;
+        }
+        .post_submit_btn{
+            position: absolute;
+            left: 430px;
+            bottom : 20px;
+        }
+        .post_submit_btn button{
+            width: 90px;
+            height: 40px;
+            font-size: 20px;
+        }
+        .close{
+            position:absolute;
+            right:30px;
+            top:20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="popEdit">
+    <h2>글수정</h2>
+    <!-- 에디터 감싸는 컨테이너 -->
+    <div id="editorContainer">
+        <!-- 에디터 -->
+        <div id="editor"></div>
+        <div class="editor_upload_box">
+            <ul class="editor_write_images">
+                <li>
+                    <label for="image_input"><i class="far fa-image"></i>
+                    </label>
+                    <input id="image_input" type="file" style="display: none;"/>
+                </li>
+                <li>
+                    <label for="file_input"><i class="fas fa-paperclip"></i>
+                    </label>
+                    <input id="file_input" type="file" style="display: none;"/>
+                </li>
+            </ul>
+            <div class="editor_write_form">
+                <form>
+                    <!-- 질문 2 : fieldset 추가 적당한지-->
+                    <fieldset>
+                        <div>
+                            <label for="post_top_input">게시글 상위 고정</label>
+                            <input type="checkbox" id="post_top_input" name="post_top" value="T"/><!--질문 3: value 뭐가 좋을지? -->
+                        </div>
+                        <div>
+                            <label for="post_all_input">모두에게 공개</label>
+                            <input type="checkbox" id="post_all_input" name="post_all" value="A"/><!--질문 3: value 뭐가 좋을지? -->
+                        </div>
+                        <div class="post_submit_btn"><button type="submit">작성</button></div>
+                    </fieldset>
+                </form>
+            </div><!--//container_form end-->
+        </div><!--//editor_upload_box end-->
+    </div><!--//editorContainer end-->
+    <div class="close"><i class="fas fa-times"></i></div>
+</div>
+<script src="js/quill.core.js"></script>
+<script src="js/quill.min.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+    let quill = new Quill('#editor', {
+        theme: 'snow'
+    });
+    const $close = $('.close');
+    $close.click(function (e) {
+
+        //$('#popWrite').css('display','none');
+        $('#popEdit').addClass('disappear_view');
+    });
+</script>
+</body>
+</html>

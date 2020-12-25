@@ -67,16 +67,7 @@
         form button{
             cursor: pointer;
         }
-        .remove_answer{
-            background-color:red;
-        }
-        .remove_question{
-            background-color: blue;
-        }
-        .add_answer_box{
-            background-color: yellowgreen;
-            
-        }
+
     </style>
 </head>
 <body>
@@ -115,7 +106,7 @@
         <div class="step_progressbar"></div>
     </div>
 </div><!--//header end-->
-<div id="container" class="step4"><!--container start-->
+<div id="container" class="step1"><!--container start-->
     <form method="post">
         <fieldset>
             <div class="step_box">
@@ -314,35 +305,35 @@
                             <div class="category_icon"><i class="fas fa-pallet"></i></div>
                             <h3 class="category_title">문화/예술</h3>
                             <div class="category_detail_box"><!--category_detail_box start-->
-                        <h3 class="screen_out">문화/예술 카테고리</h3>
-                        <ul class="category_detail_list"><!--category_detail_list start -->
-                            <li class="category_detail_item">
-                                <input id="category_detail_item30" name="board_item" type="radio" value="30"/>
-                                <h4><label for="category_detail_item30">영화</label></h4>
-                            </li>
-                            <li class="category_detail_item">
-                                <input id="category_detail_item31" name="board_item" type="radio" value="31"/>
-                                <h4><label for="category_detail_item31">공연/뮤지컬</label></h4>
-                            </li>
-                            <li class="category_detail_item">
-                                <input id="category_detail_item32" name="board_item" type="radio" value="32"/>
-                                <h4><label for="category_detail_item32">미술/전시</label></h4>
-                            </li>
-                            <li class="category_detail_item">
-                                <input id="category_detail_item33" name="board_item" type="radio" value="33"/>
-                                <h4><label for="category_detail_item33">그림/일러스트</label></h4>
-                            </li>
-                            <li class="category_detail_item">
-                                <input id="category_detail_item34" name="board_item" type="radio" value="34"/>
-                                <h4><label for="category_detail_item34">댄스/무용</label></h4>
-                            </li>
-                            <li class="category_detail_item">
-                                <input id="category_detail_item35" name="board_item" type="radio" value="35"/>
-                                <h4><label for="category_detail_item35">문화생활</label></h4>
-                            </li>
-                        </ul><!--category_detail_list end -->
-                </div><!--category_detail_box end-->
-                </li><!-- catery_item end 9-->
+                                <h3 class="screen_out">문화/예술 카테고리</h3>
+                                <ul class="category_detail_list"><!--category_detail_list start -->
+                                    <li class="category_detail_item">
+                                        <input id="category_detail_item30" name="board_item" type="radio" value="30"/>
+                                        <h4><label for="category_detail_item30">영화</label></h4>
+                                    </li>
+                                    <li class="category_detail_item">
+                                        <input id="category_detail_item31" name="board_item" type="radio" value="31"/>
+                                        <h4><label for="category_detail_item31">공연/뮤지컬</label></h4>
+                                    </li>
+                                    <li class="category_detail_item">
+                                        <input id="category_detail_item32" name="board_item" type="radio" value="32"/>
+                                        <h4><label for="category_detail_item32">미술/전시</label></h4>
+                                    </li>
+                                    <li class="category_detail_item">
+                                        <input id="category_detail_item33" name="board_item" type="radio" value="33"/>
+                                        <h4><label for="category_detail_item33">그림/일러스트</label></h4>
+                                    </li>
+                                    <li class="category_detail_item">
+                                        <input id="category_detail_item34" name="board_item" type="radio" value="34"/>
+                                        <h4><label for="category_detail_item34">댄스/무용</label></h4>
+                                    </li>
+                                    <li class="category_detail_item">
+                                        <input id="category_detail_item35" name="board_item" type="radio" value="35"/>
+                                        <h4><label for="category_detail_item35">문화생활</label></h4>
+                                    </li>
+                                </ul><!--category_detail_list end -->
+                            </div><!--category_detail_box end-->
+                        </li><!-- catery_item end 9-->
                     </ul><!--category_list end -->
                 </div>
             </div><!--// step1 end-->
@@ -461,8 +452,8 @@
                         <button type="button" class="next_btn next_btn_step2">다음</button>
                     </div>
 
-                    </div><!-- crew_create_box end-->
-                </div><!--//step2 end-->
+                </div><!-- crew_create_box end-->
+            </div><!--//step2 end-->
             <div class="step_box"><!--step3 start-->
                 <div>
                     <div class="birth_year_box"><!--birth_year_box start-->
@@ -517,24 +508,20 @@
                 </div><!--// inner end -->
             </div><!--//step3 end-->
             <div class="step_box"><!--step4 start-->
-                <div>
-                    <div class="qualification_write_box">
+                <div class="qualification_write_box">
+                    <div class="qualification_write_inner_box">
                         <div class="content_qualification_write_box"><!--content_qualification_write_box start-->
                             <h2>크루장님이 원하시는 크루 가입조건을 설정해주세요</h2>
                             <div class="add_multiple_choice_question"><h2><a href=""><i class="far fa-plus-square"></i> 객관식 질문 추가</a></h2></div>
-                            <ul class="add_multiple_choice_question_list">
 
-                            </ul>
-                            <div class="add_answer_box"><span><i class="far fa-plus-square"></i></span></div>
 
                             <div class="add_subjective_question"><h2><a href=""><i class="far fa-plus-square"></i> 단답형 질문 추가</a></h2></div>
-                            <dl class="add_subjective_question_list">
-
-                            </dl>
 
 
                             <div class="add_file_attachment_question"><h2><a href=""><i class="far fa-plus-square"></i> 파일 첨부 질문 추가</a></h2></div>
-                            <dl class="add_file_attachment_question_list"></dl>
+                            <ul class="add_question_list">
+
+                            </ul>
                         </div><!--//content_qualification_write_box end-->
                         <div class="content_description_box">
                             <h4>예시)</h4><!--제목 h4-->
@@ -564,11 +551,11 @@
                     </div><!--crew_create_btn_box end-->
                 </div><!--//inner end-->
             </div><!--//step4 end-->
-       </fieldset>
+        </fieldset>
 
     </form>
 
-<!--    <div class="step_box step4"></div>-->
+    <!--    <div class="step_box step4"></div>-->
 
 </div><!--// container end-->
 <div id="footer"><!--//footer start-->
@@ -594,43 +581,93 @@
     </div><!--//footer_container end-->
 </div><!--//footer end-->
 
+<!--객관식 질문 추가-->
 <script type="text/template" id="multipleChoiceTmpl">
     <li>
         <div>
             <label>
-                <input placeholder='질문명을 입력해 주세요'/>가나다
+                <input class="question_input" placeholder='질문명을 입력해 주세요'/>
             </label>
-            <span class="remove_question">삭제</span>
-            <span class="remove_question">삭제</span>
-            <span class="remove_question">삭제</span>
+            <span class="remove_question">질문 삭제</span>
         </div>
         <div>
-            <label>
-                <input for="" placeholder='보기를 적어주세요'/>
+            <label><span><i class="far fa-dot-circle"></i></span>
+                <input class="answer_input" for="" placeholder='보기를 적어주세요'/>
             </label>
             <span class="remove_answer"><i class="far fa-minus-square"></i></span>
         </div>
         <div>
-            <label>
-                <input for="" placeholder='보기를 적어주세요'/>
+            <label><span><i class="far fa-dot-circle"></i></span>
+                <input class="answer_input" for="" placeholder='보기를 적어주세요'/>
                 <span class="remove_answer"><i class="far fa-minus-square"></i></span>
             </label>
         </div>
         <div>
-            <label>
-                <input for="" placeholder='보기를 적어주세요'/>
+            <label><span><i class="far fa-dot-circle"></i></span>
+                <input class="answer_input" for="" placeholder='보기를 적어주세요'/>
                 <span class="remove_answer"><i class="far fa-minus-square"></i></span>
+            </label>
+        </div>
+        <div class="add_box"><span class="add_answer"><i class="far fa-plus-square"></i></span></div>
+    </li>
+</script>
+<!--//객관식 질문 추가 end-->
+<!--객관식 보기 추가-->
+<script type="text/template" id="multipleChoiceAnswerTmpl">
+    <div>
+        <label><span><i class="far fa-dot-circle"></i></span>
+            <input class="answer_input" for="" placeholder='보기를 적어주세요'/>
+            <span class="remove_answer"><i class="far fa-minus-square"></i></span>
+        </label>
+    </div>
+    <div class="add_box"><span class="add_answer"><i class="far fa-plus-square"></i></span></div>
+</script>
+
+<!--주관식 질문 추가-->
+<script type="text/template" id="subjectiveTmpl">
+    <li>
+        <div>
+            <label>
+                <input class="question_input" placeholder='질문명을 입력해 주세요'/>
+            </label>
+            <span class="remove_question">질문 삭제</span>
+        </div>
+        <div>
+            <label>
+                <input class="answer_input" for="" placeholder='(세부사항을 적어주세요)'/>
+            </label>
+            <span class="remove_answer"><i class="far fa-minus-square"></i></span>
+        </div>
+    </li>
+</script>
+<!--//주관식 질문 추가 end-->
+
+<!--파일첨부 질문 추가-->
+<script type="text/template" id="fileAttachmentTmpl">
+    <li>
+        <div>
+            <label>
+                <input class="question_input" placeholder='질문명을 입력해 주세요'/>
+            </label>
+            <span class="remove_question">질문 삭제</span>
+        </div>
+        <div>
+            <label>
+                <input class="answer_input" type="file" for="" placeholder='파일을 첨부해주세요'/>
             </label>
         </div>
     </li>
 </script>
+<!--//파일첨부 질문 추가 end-->
+
+
 
 <script src="js/jquery.js"></script>
 <script src="js/default.js"></script>
 <script src="js/step1.js"></script>
 <script src="js/step2.js"></script>
 <script src="js/step3.js"></script>
-<script src="js/step4.js"></script>
+<!--<script src="js/step4.js"></script>-->
 <script src="js/underscore-min.js"></script>
 <script>
     const $nameMsg = $('#nameMsg');
@@ -639,6 +676,76 @@
     const $nextBtn = $('.next_btn');
     const $nextBtnStep2 = $('.next_btn_step2');
     const $nextBtnStep3 = $('.next_btn_step3');
+
+    /*step4 start*/
+    let question=0;
+
+    const $addQuestionList = $('.add_question_list');
+
+    /*객관식 질문*/
+    const $addMultipleChoiceQuestion = $('.add_multiple_choice_question');
+    const multipleChoiceTmpl = _.template($('#multipleChoiceTmpl').html());
+
+
+    /*객관식 보기 질문*/
+    const $addAnswer = $('.add_answer');
+    const multipleChoiceAnswerTmpl = _.template($('#multipleChoiceAnswerTmpl').html());
+
+    /*주관식 질문*/
+    const $addSubjectiveQuestion = $('.add_subjective_question');
+    const subjectiveTmpl = _.template($('#subjectiveTmpl').html());
+
+    /*파일첨부 질문*/
+    const $addFileAttachmentQuestion = $('.add_file_attachment_question');
+    const fileAttachmentTmpl = _.template($('#fileAttachmentTmpl').html());
+
+    //객관식 질문 추가
+    $addMultipleChoiceQuestion.click(function (e) {
+        e.preventDefault();
+        // 필터에 따라서 강의 목록을 불러오는 함수
+        getAddQuestionList();
+    });
+
+
+    //주관식 질문 추가
+    $addSubjectiveQuestion.click(function (e) {
+        e.preventDefault();
+        $addQuestionList.append(subjectiveTmpl());
+    })
+
+    //파일 첨부 질문 추가
+    $addFileAttachmentQuestion.click(function (e) {
+        e.preventDefault();
+        $addQuestionList.append(fileAttachmentTmpl);
+    })
+
+    function getAddQuestionList(){
+        $addQuestionList.append(multipleChoiceTmpl());
+    }//getLectureList() end
+    //const $removeQuestion = $('.remove_question');
+
+    // 객관식 질문 삭제 클릭 함수가 작동하지 않아서 만듦
+    $(document).on("click", '.remove_question',function (e) {
+        console.log("click");
+        $(this).parent().parent().remove();
+    });
+
+    //보기 추가 버튼 클릭
+    $(document).on("click", '.add_answer',function (e) {
+        console.log("click");
+        const $this = $(this).parent();
+        $(this).remove();
+        $this.parent().append(multipleChoiceAnswerTmpl);
+    });
+
+    // 객관식 답변 보기 삭제제
+    const $removeAnswer = $('.remove_answer');
+    $(document).on("click", '.remove_answer',function (e){
+        $(this).parent().remove();
+    });
+
+    /*step4 end*/
+
     /* step change start*/
     let idx = 1;
     let progress=25;
@@ -664,39 +771,6 @@
     };
     /* step change end*/
 
-
-    /*step4 start*/
-    const $addMultipleChoiceQuestion = $('.add_multiple_choice_question');
-    //const $addSubjectiveQuestion = $('.add_subjective_question');
-    //const $addFileAttachmentQuestion = $('.add_file_attachment_question');
-    let question=0;
-    const multipleChoiceTmpl = _.template($('#multipleChoiceTmpl').html());
-    const $addMultipleChoiceQuestionList = $('.add_multiple_choice_question_list');
-
-    $addMultipleChoiceQuestion.click(function (e) {
-        e.preventDefault();
-
-        // 필터에 따라서 강의 목록을 불러오는 함수
-        getAddQuestionList();
-    });
-
-    function getAddQuestionList(){
-        $addMultipleChoiceQuestionList.append(multipleChoiceTmpl());
-    }//getLectureList() end
-    //const $removeQuestion = $('.remove_question');
-    $(document).on("click", '.remove_question',function (e) {
-        console.log("click");
-       $(this).parent().parent().remove();
-    });
-
-
-    const $removeAnswer = $('.remove_answer');
-    $(document).on("click", '.remove_answer',function (e){
-        console.log("click");
-        $(this).parent().remove();
-    })
-
-    /*step4 end*/
 </script>
 </body>
 </html>

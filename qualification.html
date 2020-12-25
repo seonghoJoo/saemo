@@ -10,12 +10,64 @@
         #container{
             padding-top: 30px;
         }
+        #container h2{
+            font-size: 20px;
+            font-weight: 700;
+            margin: 20px 0;
+        }
         #form{
 
         }
         #form dd{
             margin:5px;
         }
+        #form dl,dt{
+            margin:10px 0;
+        }
+        .multiple_choice_question dd,label,input{
+            display: inline-block;
+
+        }
+        input[type="text"]{
+            width: 300px;
+            padding:8px 10px;
+            margin:5px 0;
+        }
+        .basic_info{
+            margin:40px 0;
+        }
+        .profile_image_upload img,input,textarea {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 5px 10px 5px 0;
+        }
+        .basic_info h3{
+            margin:10px 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .crew_create_btn_box{
+            text-align: center;
+            position:relative;
+            height: 50px;
+            padding:25px 0;
+        }
+        .prev_btn{
+            width: 200px;
+            height: 50px;
+            background-color: #eeeeee;
+            outline: none;
+            border: none;
+        }
+        .next_btn{
+            width: 200px;
+            height: 50px;
+            background-color: #eeeeee;
+            outline: none;
+            border: none;
+        }
+
     </style>
 </head>
 <body>
@@ -59,37 +111,74 @@
     <div class="form_box">
         <form id="form">
             <fieldset>
-            <dl>
-                <dt class="multiple_choice_question1"><span>1</span>.연봉이 어떻게 되시나요?</dt>
-                <dd>
-                    <label>
-                        <input type="radio" id="multiple_choice_question1_1" name="multiple_choice_question1"/>
-                        <span>4000 미만</span>
-                    </label>
-                </dd>
-                <dd>
-                    <label>
-                        <input type="radio" id="multiple_choice_question1_2" name="multiple_choice_question1"/>
-                        <span>4000 이상</span>
-                    </label>
-                </dd>
+                <dl>
+                    <dt class="multiple_choice_question">1.연봉이 어떻게 되시나요?</dt>
+                    <dd>
+                        <label>
+                            <input type="radio" id="multiple_choice_question1_1" name="multiple_choice_question1"/>
+                            <span>4000 미만</span>
+                        </label>
+                    </dd>
+                    <dd>
+                        <label>
+                            <input type="radio" id="multiple_choice_question1_2" name="multiple_choice_question1"/>
+                            <span>4000 이상</span>
+                        </label>
+                    </dd>
 
-                <dt class="multiple_choice_question2"><span>2</span>.성격은 어떤가요?</dt>
-                <dd>
-                    <input type="radio" id="multiple_choice_question2_1" name="multiple_choice_question2"/>
-                    <label for="multiple_choice_question2_1"><h4>내성적</h4></label>
-                </dd>
-                <dd>
-                    <input type="radio" id="multiple_choice_question2_2" name="multiple_choice_question2"/>
-                    <label for="multiple_choice_question2_2"><h4>외향적</h4></label>
-                </dd>
-                <dd>
-                    <input type="radio" id="multiple_choice_question2_3" name="multiple_choice_question2"/>
-                    <label for="multiple_choice_question2_3"><h4>중립</h4></label>
-                </dd>
-            </dl>
+                    <dt class="multiple_choice_question">2.성격은 어떤가요?</dt>
+                    <dd>
+                        <input type="radio" id="multiple_choice_question2_1" name="multiple_choice_question2"/>
+                        <label for="multiple_choice_question2_1"><h4>내성적</h4></label>
+                    </dd>
+                    <dd>
+                        <input type="radio" id="multiple_choice_question2_2" name="multiple_choice_question2"/>
+                        <label for="multiple_choice_question2_2"><h4>외향적</h4></label>
+                    </dd>
+                    <dd>
+                        <input type="radio" id="multiple_choice_question2_3" name="multiple_choice_question2"/>
+                        <label for="multiple_choice_question2_3"><h4>중립</h4></label>
+                    </dd>
+                </dl>
 
-            <dl></dl>
+                <dl>
+                    <dt class="multiple_choice_question1">3. 직업이 되시나요?</dt>
+                    <dd>
+                        <label>
+                            <input type="text" id="subjective_choice_question1_1" name="subjective_choice_question1"/>
+                            <div class="extra_description">(공무원은 9급, 소방관, 경찰은 환영합니다.)</div>
+                        </label>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt class="file_attachment_question">4. 귀하의 사진을 올려주세요</dt>
+                    <dd>
+                        <label>
+                            <input type="file" id="file_attachment_question1_1" name="file_attachment_question1"/>
+                        </label>
+                    </dd>
+                </dl>
+                <div class="basic_info">
+                    <div class="profile_image_upload">
+                        <label>
+                            <h3>프로필 사진</h3>
+                            <img src="" width="60" height="60"/>
+                            <input type="file" id="profile" name="profile"/>
+                        </label>
+                        </dd>
+                    </div>
+                    <div class="profile_introduce_upload">
+                        <label>
+                            <h3>간단한 자기소개</h3>
+                            <textarea class="introduce" placeholder="내용을 입력해 주세요"></textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="crew_create_btn_box">
+                    <button type="button" class="prev_btn"><a>이전</a></button>
+                    <button type="submit" class="next_btn">제출</button>
+                </div><!--crew_create_btn_box end-->
             </fieldset>
         </form>
     </div>

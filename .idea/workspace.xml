@@ -20,8 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05598bb2-dcf1-4913-bd2e-f7cdbb63f584" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/quill.core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/quill.snow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/quill.core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/quill.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/가입신청폼.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/글수정.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/글쓰기.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_cerw.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_cerw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/step4.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/step4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/step2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/step2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qualification.html" beforeDir="false" afterPath="$PROJECT_DIR$/qualification.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,26 +61,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\BMJ\workspace\saemo" />
-      <recent name="C:\BMJ\workspace\saemo\js" />
-      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
-      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\css" />
-      <recent name="C:\Users\E\WebstormProjects\untitled1\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\ajax" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\css" />
       <recent name="C:\Users\E\WebstormProjects\untitled1" />
       <recent name="C:\Users\E\WebstormProjects\untitled1\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\BMJ\workspace\saemo\js" />
+      <recent name="C:\BMJ\workspace\saemo\css" />
+      <recent name="C:\BMJ\workspace\saemo" />
+      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
+      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\css" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -103,6 +113,14 @@
       <workItem from="1608701859049" duration="151000" />
       <workItem from="1608702507586" duration="2090000" />
       <workItem from="1608709467344" duration="6274000" />
+      <workItem from="1608748866774" duration="2559000" />
+      <workItem from="1608775631229" duration="51000" />
+      <workItem from="1608777186261" duration="57000" />
+      <workItem from="1608785705414" duration="784000" />
+      <workItem from="1608789267946" duration="317000" />
+      <workItem from="1608789733241" duration="6623000" />
+      <workItem from="1608805806461" duration="1786000" />
+      <workItem from="1608928069496" duration="3630000" />
     </task>
     <servers />
   </component>
@@ -120,5 +138,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1608777242187">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608777242187" />
   </component>
 </project>
