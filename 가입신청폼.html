@@ -1,10 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/default.css"/>
+    <style>
+        html{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.5);
+        }
+        #popRegisterForm{
+            width: 497px;
+            height: 586px;
+            position: fixed;
+            left:50%;
+            top:50%;
+            margin:-315px 0 0 -293.5px;
+            background-color: white;
+            padding:22px 45px;
+            overflow-y: scroll;
+        }
+        .disappear_view{
+            display: none;
+        }
+        .form_box{
+            width: 458px;
+            height: 544px;
+            border: 1px solid #424242;
+            padding:20px 10px;
+        }
+        .register_profile_box{
+            width: 422px;
+            height: 208px;
+            border: 1px solid #424242;
+            padding:10px 14.5px;
+            position: relative;
+        }
+
+        .introduce_box{
+            width: 398px;
+            height: 103px;
+            border: 1px solid #424242;
+            padding:8px 12px;
+        }
+
+        .qualification_answer_box{
+            width: 451px;
+            height: 173px;
+            border: 1px solid #424242;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .qualification_answer_box h3{
+            font-size: 24px;
+            font-weight: 700;
+            border-bottom: 2px solid #424242;
+            padding: 15px 0;
+        }
+        .answer_item{
+            margin:5px 0;
+        }
+        .confirm_box{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .confirm_btn_box{
+            margin-top: 30px;
+        }
+        .confirm_btn_box button{
+            width: 100px;
+            height: 40px;
+            background-color: rgb(255, 99, 51);
+            color: white;
+            outline: none;
+            border: none;
+        }
+
+        .close{
+            position:absolute;
+            right:10px;
+            top:5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .person_info_box{
+            position: relative;
+            width: 400px;
+            height: 60px;
+            margin-top: 20px;
+        }
+        .profile_img{
+
+            width: 40px;
+            margin-left: 10px;
+            float: left;
+        }
+        .profile_box{
+            margin-left: 20px;
+            width: 300px;
+            float: left;
+        }
+    </style>
 </head>
 <body>
 
+<div id="popRegisterForm">
+    <div class="form_box">
+        <div class="register_profile_box">
+            <div class="person_info_box">
+                <div class="profile_img">
+                    <img src="img/default.jpg" width="40" height="40" />
+                </div>
+                <div class="profile_box">
+                    <h4 class="name">송진현</h4>
+                    <h4 class="birth_year">1996년생</h4>
+                    <h4 class="address">송진현</h4>
+                </div>
+            </div>
+            <div class="introduce_box">타오르고 있는가? 우리 눈이 그것을 보는 때에 우리의 귀는 생의 찬미를 듣는다 그것은 웅대한 관현악이며 미묘한 교향악이다 뼈 끝에 스며들어 가는 열락의 소리다이것은 피어나기 전인 유소년에게서 구하지 </div>
+        </div>
+
+        <div class="qualification_answer_box">
+            <h3>자격 테스트 문제 답변</h3>
+            <div>
+                <ul class="answer_list">
+                    <li class="answer_item">1. 연봉이 어떻게 되시나요?</li>
+                    <li class="answer_item">4000 이상</li>
+                    <li class="answer_item">2. 직업이 어떻게 되시나요?</li>
+                    <li class="answer_item">소방관</li>
+                </ul>
+            </div>
+        </div>
+        <div class="confirm_box">
+            <h4>승인까지 남은 시간 <span class="remain_time">24:07:35</span></h4>
+            <div class="confirm_btn_box"><!-- 기본이 submit이라 막아야해-->
+                <button type="button" class="prev_btn"><a>가입 승인</a></button>
+                <button type="button" class="next_btn">가입 거절</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="close"><i class="fas fa-times"></i></div>
+</div>
+<script src="js/jquery.js"></script>
+<script>
+    const $close = $('.close');
+    $close.click(function (e) {
+        $('#popRegisterForm').addClass('disappear_view');
+    });
+    const $nextBtn = $('.next_btn');
+    $nextBtn.click(function(e) {
+        confirm("가입을 승인하시겠습니까?");
+    })
+</script>
 </body>
 </html>

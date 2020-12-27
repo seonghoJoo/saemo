@@ -67,7 +67,23 @@
         form button{
             cursor: pointer;
         }
-
+        /*#category_image_item8{*/
+        /*    display: none;*/
+        /*}*/
+        .category_upload_image{
+            background-color: #424242;
+            width: 150px;
+            height: 60px;
+            padding:20px 0;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .question_num{
+            font-size: 20px;
+            font-weight: 700;
+            margin:0 5px 0 0;
+        }
     </style>
 </head>
 <body>
@@ -106,7 +122,7 @@
         <div class="step_progressbar"></div>
     </div>
 </div><!--//header end-->
-<div id="container" class="step1"><!--container start-->
+<div id="container" class="step2"><!--container start-->
     <form method="post">
         <fieldset>
             <div class="step_box">
@@ -352,7 +368,6 @@
                             <div class="crew_image_selected">
                                 <img src="img/category1.jpg" width="280" height="220" title="" alt="" />
                             </div>
-
                             <ul class="crew_image_list">
                                 <li class="crew_image_item">
                                     <input id="category_image_item1" checked="checked" name="image_item" type="radio" value="1"/>
@@ -364,7 +379,6 @@
                                         </div>
                                     </label>
                                 </li>
-
                                 <li class="crew_image_item">
                                     <input id="category_image_item2" name="image_item" type="radio" value="2"/>
                                     <label for="category_image_item2">
@@ -375,7 +389,6 @@
                                         </div>
                                     </label>
                                 </li>
-
                                 <li class="crew_image_item">
                                     <input id="category_image_item3" name="image_item" type="radio" value="1"/>
                                     <label for="category_image_item3">
@@ -386,7 +399,6 @@
                                         </div>
                                     </label>
                                 </li>
-
                                 <li class="crew_image_item">
                                     <input id="category_image_item4" name="image_item" type="radio" value="4"/>
                                     <label for="category_image_item4">
@@ -397,7 +409,6 @@
                                         </div>
                                     </label>
                                 </li>
-
                                 <li class="crew_image_item">
                                     <input id="category_image_item5" name="image_item" type="radio" value="5"/>
                                     <label for="category_image_item5">
@@ -408,7 +419,6 @@
                                         </div>
                                     </label>
                                 </li>
-
                                 <li class="crew_image_item">
                                     <input id="category_image_item6" name="image_item" type="radio" value="6"/>
                                     <label for="category_image_item6">
@@ -419,7 +429,6 @@
                                         </div>
                                     </label>
                                 </li>
-
                                 <li class="crew_image_item">
                                     <input id="category_image_item7" name="image_item" type="radio" value="7"/>
                                     <label for="category_image_item7">
@@ -431,15 +440,17 @@
                                     </label>
                                 </li>
                                 <li class="crew_image_item">
-                                    <input id="category_image_item8" name="image_item" type="file" value="4"/>
-
-                                    <i class="fas fa-check"></i>
+                                    <label for="image_input">
+                                        <div class="category_upload_image">
+                                            <i class="fas fa-camera"></i>
+                                            <h4>사진추가</h4>
+                                        </div>
+                                        <input id="image_input" name="image_item" type="file" value="4" style="display: none;"/>
+                                    </label>
                                 </li>
                             </ul>
                         </div>
                     </div><!--crew_create_cover_box-->
-
-
                     <div class="crew_create_input_intro_box">
                         <label><h2>크루 한 줄 소개글</h2>
                             <input class="crew_intro_input" maxlength="20" placeholder="한 줄 소개글 입력"/>
@@ -586,7 +597,7 @@
     <li>
         <div>
             <label>
-                <input class="question_input" placeholder='질문명을 입력해 주세요'/>
+                <span class="question_num"><%=++question%></span><input class="question_input" placeholder='질문명을 입력해 주세요'/>
             </label>
             <span class="remove_question">질문 삭제</span>
         </div>
@@ -628,7 +639,7 @@
     <li>
         <div>
             <label>
-                <input class="question_input" placeholder='질문명을 입력해 주세요'/>
+                <span class="question_num"><%=++question%></span><input class="question_input" placeholder='질문명을 입력해 주세요'/>
             </label>
             <span class="remove_question">질문 삭제</span>
         </div>
@@ -647,7 +658,7 @@
     <li>
         <div>
             <label>
-                <input class="question_input" placeholder='질문명을 입력해 주세요'/>
+                <span class="question_num"><%=++question%></span><input class="question_input" placeholder='질문명을 입력해 주세요'/>
             </label>
             <span class="remove_question">질문 삭제</span>
         </div>
@@ -663,12 +674,13 @@
 
 
 <script src="js/jquery.js"></script>
+<script src="js/underscore-min.js"></script>
 <script src="js/default.js"></script>
 <script src="js/step1.js"></script>
 <script src="js/step2.js"></script>
 <script src="js/step3.js"></script>
-<!--<script src="js/step4.js"></script>-->
-<script src="js/underscore-min.js"></script>
+<script src="js/step4.js"></script>
+
 <script>
     const $nameMsg = $('#nameMsg');
     const $populationMsg = $('#populationMsg');
@@ -677,74 +689,6 @@
     const $nextBtnStep2 = $('.next_btn_step2');
     const $nextBtnStep3 = $('.next_btn_step3');
 
-    /*step4 start*/
-    let question=0;
-
-    const $addQuestionList = $('.add_question_list');
-
-    /*객관식 질문*/
-    const $addMultipleChoiceQuestion = $('.add_multiple_choice_question');
-    const multipleChoiceTmpl = _.template($('#multipleChoiceTmpl').html());
-
-
-    /*객관식 보기 질문*/
-    const $addAnswer = $('.add_answer');
-    const multipleChoiceAnswerTmpl = _.template($('#multipleChoiceAnswerTmpl').html());
-
-    /*주관식 질문*/
-    const $addSubjectiveQuestion = $('.add_subjective_question');
-    const subjectiveTmpl = _.template($('#subjectiveTmpl').html());
-
-    /*파일첨부 질문*/
-    const $addFileAttachmentQuestion = $('.add_file_attachment_question');
-    const fileAttachmentTmpl = _.template($('#fileAttachmentTmpl').html());
-
-    //객관식 질문 추가
-    $addMultipleChoiceQuestion.click(function (e) {
-        e.preventDefault();
-        // 필터에 따라서 강의 목록을 불러오는 함수
-        getAddQuestionList();
-    });
-
-
-    //주관식 질문 추가
-    $addSubjectiveQuestion.click(function (e) {
-        e.preventDefault();
-        $addQuestionList.append(subjectiveTmpl());
-    })
-
-    //파일 첨부 질문 추가
-    $addFileAttachmentQuestion.click(function (e) {
-        e.preventDefault();
-        $addQuestionList.append(fileAttachmentTmpl);
-    })
-
-    function getAddQuestionList(){
-        $addQuestionList.append(multipleChoiceTmpl());
-    }//getLectureList() end
-    //const $removeQuestion = $('.remove_question');
-
-    // 객관식 질문 삭제 클릭 함수가 작동하지 않아서 만듦
-    $(document).on("click", '.remove_question',function (e) {
-        console.log("click");
-        $(this).parent().parent().remove();
-    });
-
-    //보기 추가 버튼 클릭
-    $(document).on("click", '.add_answer',function (e) {
-        console.log("click");
-        const $this = $(this).parent();
-        $(this).remove();
-        $this.parent().append(multipleChoiceAnswerTmpl);
-    });
-
-    // 객관식 답변 보기 삭제제
-    const $removeAnswer = $('.remove_answer');
-    $(document).on("click", '.remove_answer',function (e){
-        $(this).parent().remove();
-    });
-
-    /*step4 end*/
 
     /* step change start*/
     let idx = 1;
@@ -770,6 +714,7 @@
         console.log(idx);
     };
     /* step change end*/
+
 
 </script>
 </body>
