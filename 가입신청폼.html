@@ -77,6 +77,8 @@
             color: white;
             outline: none;
             border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
         .close{
@@ -158,25 +160,29 @@
         confirm("가입을 승인하시겠습니까?");
     });
 
-    let tomorrow = moment(2020,12,29,14,0,0);
+    //시간 차이 보여줌 1초마다 차이가 줄어듦
+    let tomorrow = moment('2020/12/29');
     function displaytime(){
         //  Date객체 생성 (
         let now = moment();
 
         //  역사 1900년대 사람들은 2000년대를 고려하지 않고 getYear라는 함수를 만들었었음
 
-        let tmp = moment.duration(now.diff(tomorrow)).asMinutes();
+        let tmp = moment.duration(tomorrow.diff(now)).asMinutes();
         console.log(tmp);
 
 
-        let seconds = moment.duration(now.diff(tomorrow)).seconds();
-        let minute = moment.duration(now.diff(tomorrow)).minutes();
-        let hour = moment.duration(now.diff(tomorrow)).hours();
-
-        //일 얻기 (주의 getDay면 1주일 월화~~일) 이거 얻어오는 거임
-
-        const fullTime =  hour+":" + minute+":" + seconds;
-        console.log(hour + " : " + minute+ " : "+ seconds);
+        let seconds = moment.duration(tomorrow.diff(now)).seconds();
+        let minute = moment.duration(tomorrow.diff(now)).minutes();
+        let hour = moment.duration(tomorrow.diff(now)).hours();
+        let fullTime;
+        if(minute<10 && seconds<10){
+            fullTime =  hour+":0" + minute+":0" + seconds;
+        }else if(minute<10){
+            fullTime =  hour+":0" + minute+":" + seconds;
+        }else{
+            fullTime =  hour+":" + minute+":" + seconds;
+        }
         $(".remain_time").text(fullTime);
 
     }//displayTime() end

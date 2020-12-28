@@ -1,8 +1,6 @@
 const $li1 = $( '.category_item:nth-child(3n+1)' );
 const $li2 = $( '.category_item:nth-child(3n+2)' );
 const $li3 = $( '.category_item:nth-child(3n)' );
-
-
 /*step1 start*/
 $li1.hover(function (e) {
     //this라는 키워드가 있음 : 그 요소
@@ -31,18 +29,23 @@ $li1.hover(function (e) {
     else{
         // 클릭한 요소의 on 클래스 추가
         $(this).children().eq(0).addClass("on");
-
+        let len = $(this).children().next().next().children().next().children().length;
+        let add=0;
+        if(len>5) {
+          add+=30;
+        }
+        console.log(add+130);
         $(this).css({
-            "height":"160px"
+            "height": add+130+"px"
         });
         $(this).next().next().css({
-            "height":"160px"
+            "height": add+130+"px"
         });
         $(this).next().css({
-            "height":"160px"
+            "height": add+130+"px"
         });
         $(this).children().eq(2).css({
-            "height":"100px"
+            "height": "100px"
         });
     }
 });//#$li1.hover() end
@@ -76,18 +79,25 @@ $li2.hover(function (e) {
     else{
         // 클릭한 요소의 on 클래스 추가
         $(this).children().eq(0).addClass("on");
+        let len = $(this).children().next().next().children().next().children().length;
+        let add=0;
+        if(len>5) {
+            add+=30;
+        }
+        console.log(add+130);
         $(this).css({
-            "height":"160px"
+            "height": add+130+"px"
         });
         $(this).next().css({
-            "height":"160px"
+            "height": add+130+"px"
         });
         $(this).before().css({
-            "height":"160px"
+            "height": add+130+"px"
         });
         $(this).children().eq(2).css({
             "height":"100px"
         });
+
         $('.category_detail_box').addClass('move_center');
 
     }
@@ -122,17 +132,22 @@ $li3.hover(function (e) {
     else{
         // 클릭한 요소의 on 클래스 추가
         $(this).children().eq(0).addClass("on");
+        let len = $(this).children().next().next().children().next().children().length;
+        let add=0;
+        if(len>5) {
+            add+=30;
+        }
         $(this).css({
-            "height":"160px"
+            "height": add+130+"px"
         });
         $(this).before().before().css({
-            "height":"160px"
+            "height": add+130+"px"
         });
         $(this).before().css({
-            "height":"160px"
+            "height": add+130+"px"
         });
         $(this).children().eq(2).css({
-            "height":"100px"
+            "height": add+130+"px"
         });
         $('.category_detail_box').addClass('move_right');
     }

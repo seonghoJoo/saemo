@@ -122,7 +122,7 @@
         <div class="step_progressbar"></div>
     </div>
 </div><!--//header end-->
-<div id="container" class="step4"><!--container start-->
+<div id="container" class="step1"><!--container start-->
     <form method="post">
         <fieldset>
             <div class="step_box">
@@ -693,10 +693,11 @@
     let progress=25;
     console.log(idx);
 
+    // 다음 버튼 클릭
     $('.next_btn').click(changeStep);
 
 
-
+    // 이전 버튼 클릭
     $prevBtn.click(function () {
         $("#container").attr("class","step"+ --idx);
         progress-=25;
@@ -704,7 +705,7 @@
         console.log(idx);
     });
 
-
+    // changeStep 함수 (nextBtn)
     function changeStep(){
         $("#container").attr("class","step"+ ++idx);
         progress+=25;
@@ -715,7 +716,7 @@
 
     let categoryPath="";
     /*step1 start*/
-    const $categoryInput = $('.category_detail_item input');
+    // const $categoryInput = $('.category_detail_item input');
 
 
     /*step1 end*/

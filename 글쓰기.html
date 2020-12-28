@@ -366,8 +366,6 @@
             }
         });
 
-
-
     })
 
 
@@ -379,8 +377,22 @@
     Quill.register(ColorClass, true);
 
     $(document).on("click", '.remove_question',function (e) {
-        console.log("click");
-        $(this).parent().remove();
+        const $this = $(this);
+        //여기서 ajax로 파일 업로드 수행
+        $.ajax({
+            url:"ajax/deleteFile.json",
+            type : 'POST',//multipart/form-data
+            dataType : "json",
+            error : function(xhr, error, code) {
+                alert("에러:" + code);
+            },
+            success:function(json) {
+                alert(json.result);
+                if(json.result==true) {
+                    $this.parent().remove();
+                }
+            }
+        });
     });
 
 </script>
