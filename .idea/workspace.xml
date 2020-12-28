@@ -20,19 +20,97 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05598bb2-dcf1-4913-bd2e-f7cdbb63f584" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ajax/uploadImage.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/temp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ajax/uploadFile.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/게임/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/게임/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/게임/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/게임/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/게임/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/게임/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/게임/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/게임/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/문화예술/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/문화예술/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/문화예술/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/문화예술/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/문화예술/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/문화예술/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/문화예술/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/문화예술/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/반려동물/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/반려동물/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/반려동물/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/반려동물/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/반려동물/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/반려동물/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/반려동물/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/반려동물/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/봉사활동/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/봉사활동/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/봉사활동/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/봉사활동/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/봉사활동/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/봉사활동/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/봉사활동/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/봉사활동/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/사교모임/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/사교모임/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/사교모임/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/사교모임/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/사교모임/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/사교모임/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/사교모임/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/사교모임/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/스터디/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/스터디/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/스터디/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/스터디/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/스터디/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/스터디/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/스터디/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/스터디/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/아웃도어여행/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/아웃도어여행/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/아웃도어여행/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/아웃도어여행/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/아웃도어여행/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/아웃도어여행/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/아웃도어여행/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/아웃도어여행/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/운동스포츠/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/운동스포츠/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/운동스포츠/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/운동스포츠/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/운동스포츠/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/운동스포츠/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/운동스포츠/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/운동스포츠/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/취미/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/취미/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/취미/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/취미/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/취미/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/취미/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/취미/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/취미/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/moment-with-locales.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_cerw.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_cerw.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crew_qualification_prac.html" beforeDir="false" afterPath="$PROJECT_DIR$/crew_qualification_prac.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/step2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/step2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/step2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/step2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8_요소생성추가삭제.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_cerw.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_crew.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crewDetailPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crew_qualification_prac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datepicker.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/step1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/step1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/step4.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/step4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qualification.html" beforeDir="false" afterPath="$PROJECT_DIR$/qualification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notitle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/popMeetingMakingForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/가입신청폼.html" beforeDir="false" afterPath="$PROJECT_DIR$/가입신청폼.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/글수정.html" beforeDir="false" afterPath="$PROJECT_DIR$/글수정.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/글쓰기.html" beforeDir="false" afterPath="$PROJECT_DIR$/글쓰기.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/모임만들기.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/모임상세.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/밋팅데려오기-1)진행중인 밋팅 목록_이아림.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,25 +140,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\BMJ\workspace\saemo\img" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\ajax" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\css" />
       <recent name="C:\Users\E\WebstormProjects\untitled1" />
-      <recent name="C:\Users\E\WebstormProjects\untitled1\img" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\BMJ\workspace\saemo" />
       <recent name="C:\BMJ\workspace\saemo\img" />
       <recent name="C:\BMJ\workspace\saemo\js" />
       <recent name="C:\BMJ\workspace\saemo\css" />
-      <recent name="C:\BMJ\workspace\saemo" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
     </key>
   </component>
@@ -124,7 +202,9 @@
       <workItem from="1608928069496" duration="3630000" />
       <workItem from="1608932311845" duration="14000" />
       <workItem from="1608954458551" duration="18206000" />
-      <workItem from="1609033134999" duration="5636000" />
+      <workItem from="1609033134999" duration="7912000" />
+      <workItem from="1609115974059" duration="3394000" />
+      <workItem from="1609120191521" duration="11769000" />
     </task>
     <servers />
   </component>
@@ -148,6 +228,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608777242187" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1609125257154">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609125257154" />
     <state x="2466" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1608962297800">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -156,5 +240,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608972894728" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609139837846">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609139837846" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/글쓰기.html</url>
+          <line>283</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -139,5 +139,35 @@ $li3.hover(function (e) {
 });//#$li3.hover() end
 /*step1 end*/
 
+//step2로 넘어감과 동시에 카테고리 값을 step2에 넘김
+$(".category_detail_item").change(function(e){
 
+    const val = $('.category_detail_item input[type="radio"]:checked').val();
+    if(val>=1 &&val<=3){
+        categoryPath="게임";
+    }else if(val>=4 && val<=7){
+        categoryPath="아웃도어여행"
+    }else if(val==8){
+        categoryPath="반려동물"
+    }else if(val==9){
+        categoryPath="봉사활동"
+    }else if(val==10){
+        categoryPath="사교모임"
+    }else if(val>=11 && val<=13){
+        categoryPath="스터디"
+    }else if(val >=14 && val<=23){
+        categoryPath="운동스포츠"
+    }else if(val>=24 && val<=29){
+        categoryPath="취미"
+    }else{
+        categoryPath="문화예술"
+    }
+    // src="img/category1.jpg"
+    $crewImageSelectedImg.attr("src","img/"+categoryPath+"/1.jpg");
+    $('.crew_image_item img').each(function (index,item) {
+        $(this).attr("src","img/"+categoryPath+"/"+(index+1)+".jpg");
+        $(this).attr("data-src","img/"+categoryPath+"/"+(index+1)+".jpg");
+    })
+    changeStep();
+});
 
