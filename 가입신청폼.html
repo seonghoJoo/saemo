@@ -12,6 +12,7 @@
             height: 100%;
             background-color: rgba(0,0,0,.5);
         }
+        /*497+44 586+90*/
         #popRegisterForm{
             width: 497px;
             height: 586px;
@@ -151,17 +152,25 @@
 <script src="js/jquery.js"></script>
 <script src="js/moment-with-locales.js"></script>
 <script>
+    // 닫기
     const $close = $('.close');
     $close.click(function (e) {
         $('#popRegisterForm').addClass('disappear_view');
     });
+
+    //가입 승인버튼
     const $nextBtn = $('.next_btn');
     $nextBtn.click(function(e) {
-        confirm("가입을 승인하시겠습니까?");
+        if (confirm(name+"가입을 승인하시겠습니까?") == true){    //확인
+            document.removefrm.submit();
+        }else{   //취소
+            return false;
+        }
     });
 
     //시간 차이 보여줌 1초마다 차이가 줄어듦
-    let tomorrow = moment('2020/12/29');
+    //let meetingDue = 미팅시간-3일;
+    let tomorrow = moment('2020/12/30');
     function displaytime(){
         //  Date객체 생성 (
         let now = moment();
@@ -171,18 +180,24 @@
         let tmp = moment.duration(tomorrow.diff(now)).asMinutes();
         console.log(tmp);
 
-
+        //시분초 차이 구하기
         let seconds = moment.duration(tomorrow.diff(now)).seconds();
         let minute = moment.duration(tomorrow.diff(now)).minutes();
         let hour = moment.duration(tomorrow.diff(now)).hours();
+
         let fullTime;
+        //00:00:00으로 보이게 하기
         if(minute<10 && seconds<10){
             fullTime =  hour+":0" + minute+":0" + seconds;
         }else if(minute<10){
             fullTime =  hour+":0" + minute+":" + seconds;
+        }else if(seconds<10){
+            fullTime =  hour+":" + minute+":0" + seconds;
         }else{
             fullTime =  hour+":" + minute+":" + seconds;
         }
+
+        // text 표시
         $(".remain_time").text(fullTime);
 
     }//displayTime() end
