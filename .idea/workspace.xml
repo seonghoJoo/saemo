@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05598bb2-dcf1-4913-bd2e-f7cdbb63f584" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ajax/deleteFile.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_crew.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_crew.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_crew2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/step1.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/step1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop_write.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/가입신청폼.html" beforeDir="false" afterPath="$PROJECT_DIR$/가입신청폼.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/글쓰기.html" beforeDir="false" afterPath="$PROJECT_DIR$/글쓰기.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/step2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/step2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/글수정.html" beforeDir="false" afterPath="$PROJECT_DIR$/글수정.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +117,8 @@
       <workItem from="1608954458551" duration="18206000" />
       <workItem from="1609033134999" duration="7912000" />
       <workItem from="1609115974059" duration="3394000" />
-      <workItem from="1609120191521" duration="15641000" />
+      <workItem from="1609120191521" duration="16157000" />
+      <workItem from="1609202327338" duration="2598000" />
     </task>
     <servers />
   </component>
@@ -145,10 +142,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608777242187" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1609125257154">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2381" y="164" key="SettingsEditor" timestamp="1609203808054">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609125257154" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609202870292" />
+    <state x="2381" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609203808054" />
     <state x="2466" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1608962297800">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -169,7 +167,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/글쓰기.html</url>
           <line>283</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

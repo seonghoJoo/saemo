@@ -32,12 +32,15 @@
         .step4 .step_box:nth-child(3) {display: none}
         .step4 .step_box:nth-child(4) {display: block}
 
+        /*프로그레스바 전체*/
         .progressbar_container{
             width: 100%;
             height: 2px;
             position: absolute;
             bottom: -2px;
         }
+
+        /*프로그레스바 차지한 영역*/
         .step_progressbar{
             background: #FF6333;
             height: 2px;
@@ -83,6 +86,10 @@
             font-size: 20px;
             font-weight: 700;
             margin:0 5px 0 0;
+        }
+        button:disabled{
+            opacity: 1;
+            color: #000;
         }
     </style>
 </head>
@@ -361,6 +368,7 @@
                             <input class="crew_name_input" placeholder="크루이름 입력" maxlength="10"/><span class="crew_name_len_limit">최소2자/최대10자</span>
                         </label>
                         <p id="nameMsg" class="msg">최소 2자 입력해주세요</p>
+                        <p id="nameCheckMsg" class="msg">중복된 이름입니다.</p>
                     </div>
                     <div class="crew_create_cover_box">
                         <h2>크루 커버사진</h2>
@@ -460,7 +468,7 @@
                     </div>
                     <div class="crew_create_btn_box"><!-- 기본이 submit이라 막아야해-->
                         <button type="button" class="prev_btn"><a>이전</a></button>
-                        <button type="button" class="next_btn next_btn_step2">다음</button>
+                        <button type="button" class="next_btn next_btn_step2" disabled="disabled">다음</button>
                     </div>
 
                 </div><!-- crew_create_box end-->

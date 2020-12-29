@@ -30,6 +30,12 @@ $crew_name.keyup(function (e) {
             },
             success:function(json) {
                 console.log("ajax 실행:"+json.result);
+
+                if(json.result==false) {
+                    $('#nameCheckMsg').addClass("ok");
+                }else{
+                    $('#nameCheckMsg').removeClass("ok");
+                }
             }
         });
 
