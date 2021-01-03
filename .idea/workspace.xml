@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05598bb2-dcf1-4913-bd2e-f7cdbb63f584" name="Default Changelist" comment="" />
+    <list default="true" id="05598bb2-dcf1-4913-bd2e-f7cdbb63f584" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/chartExp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/tui-chart.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tui-chart-all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/tui-chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/밋팅디테일.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_crew.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_crew.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -48,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/1차_프로젝트-이아림" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -56,16 +65,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\BMJ\workspace\saemo\css" />
+      <recent name="C:\BMJ\workspace\saemo\js" />
       <recent name="C:\BMJ\workspace\saemo\img" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\ajax" />
-      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\css" />
-      <recent name="C:\Users\E\WebstormProjects\untitled1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\BMJ\workspace\saemo\js" />
       <recent name="C:\BMJ\workspace\saemo" />
       <recent name="C:\BMJ\workspace\saemo\img" />
-      <recent name="C:\BMJ\workspace\saemo\js" />
       <recent name="C:\BMJ\workspace\saemo\css" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
     </key>
@@ -115,7 +124,11 @@
       <workItem from="1609120191521" duration="16157000" />
       <workItem from="1609202327338" duration="4526000" />
       <workItem from="1609209104874" duration="79000" />
-      <workItem from="1609209270255" duration="1632000" />
+      <workItem from="1609209270255" duration="1787000" />
+      <workItem from="1609381793309" duration="4244000" />
+      <workItem from="1609462343593" duration="5618000" />
+      <workItem from="1609551959111" duration="4374000" />
+      <workItem from="1609584513110" duration="6123000" />
     </task>
     <task id="LOCAL-00001" summary="add confirm">
       <created>1609211753422</created>
@@ -147,6 +160,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="add confirm" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2610" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609383144549">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2610" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609383144549" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1609205361071">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
