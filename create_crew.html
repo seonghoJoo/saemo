@@ -48,6 +48,7 @@
             transition:.5s;
         }
 
+        /*이전 버튼*/
         .prev_btn{
             width: 200px;
             height: 50px;
@@ -56,11 +57,14 @@
             border: none;
         }
 
+        /*예외처리*/
         .msg{
             font-size: 12px;
             margin-top:5px;
             display: none;
         }
+
+        /*예외처리 ok class 추가*/
         .msg.ok{
             font-size: 12px;
             margin-top: 5px;
@@ -69,23 +73,6 @@
         }
         form button{
             cursor: pointer;
-        }
-        /*#category_image_item8{*/
-        /*    display: none;*/
-        /*}*/
-        .category_upload_image{
-            background-color: #424242;
-            width: 150px;
-            height: 60px;
-            padding:20px 0;
-            text-align: center;
-            font-size: 30px;
-            cursor: pointer;
-        }
-        .question_num{
-            font-size: 20px;
-            font-weight: 700;
-            margin:0 5px 0 0;
         }
         button:disabled{
             opacity: 1;
@@ -143,15 +130,15 @@
                                 <h3 class="screen_out">게임 하위 카테고리</h3>
                                 <ul class="category_detail_list"><!--category_detail_list start -->
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item1"  name="board_item" type="radio" value="1"/>
+                                        <input id="category_detail_item1"  name="category_no" type="radio" value="10"/>
                                         <h4><label for="category_detail_item1">콘솔게임</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item2" name="board_item" type="radio" value="2"/>
+                                        <input id="category_detail_item2" name="category_no" type="radio" value="11"/>
                                         <h4><label for="category_detail_item2">PC게임</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item3" name="board_item" type="radio" value="3"/>
+                                        <input id="category_detail_item3" name="category_no" type="radio" value="12"/>
                                         <h4><label for="category_detail_item3">모바일게임</label></h4>
                                     </li>
                                 </ul><!--category_detail_list end -->
@@ -164,19 +151,19 @@
                                 <h3 class="screen_out">아웃도어 카테고리</h3>
                                 <ul class="category_detail_list"><!--category_detail_list start -->
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item4" name="board_item" type="radio" value="4"/>
+                                        <input id="category_detail_item4" name="category_no" type="radio" value="13"/>
                                         <h4><label for="category_detail_item4">해외여행</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item5" name="board_item" type="radio" value="5"/>
+                                        <input id="category_detail_item5" name="category_no" type="radio" value="14"/>
                                         <h4><label for="category_detail_item5">국내여행</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item6" name="board_item" type="radio" value="6"/>
+                                        <input id="category_detail_item6" name="category_no" type="radio" value="15"/>
                                         <h4><label for="category_detail_item6">배낭여행</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item7" name="board_item" type="radio" value="7"/>
+                                        <input id="category_detail_item7" name="category_no" type="radio" value="16"/>
                                         <h4><label for="category_detail_item7">캠핑</label></h4>
                                     </li>
                                 </ul><!--category_detail_list end -->
@@ -189,7 +176,7 @@
                                 <h3 class="screen_out">반려동물 카테고리</h3>
                                 <ul class="category_detail_list"><!--category_detail_list start -->
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item8" name="board_item" type="radio" value="8"/>
+                                        <input id="category_detail_item8" name="category_no" type="radio" value="17"/>
                                         <h4><label for="category_detail_item8">반려동물</label></h4>
                                     </li>
                                 </ul><!--category_detail_list end -->
@@ -202,7 +189,7 @@
                                 <h3 class="screen_out">봉사활동 카테고리</h3>
                                 <ul class="category_detail_list"><!--category_detail_list start -->
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item9" name="board_item" type="radio" value="9"/>
+                                        <input id="category_detail_item9" name="category_no" type="radio" value="18"/>
                                         <h4><label for="category_detail_item9">봉사활동</label></h4>
                                     </li>
                                 </ul><!--category_detail_list end -->
@@ -215,7 +202,7 @@
                                 <h3 class="screen_out">사교모임 카테고리</h3>
                                 <ul class="category_detail_list"><!--category_detail_list start -->
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item10" name="board_item" type="radio" value="10"/>
+                                        <input id="category_detail_item10" name="category_no" type="radio" value="19"/>
                                         <h4><label for="category_detail_item10">사교모임</label></h4>
                                     </li>
                                 </ul><!--category_detail_list end -->
@@ -228,15 +215,15 @@
                                 <h3 class="screen_out">스터디 카테고리</h3>
                                 <ul class="category_detail_list"><!--category_detail_list start -->
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item11" name="board_item" type="radio" value="11"/>
+                                        <input id="category_detail_item11" name="category_no" type="radio" value="20"/>
                                         <h4><label for="category_detail_item11">언어</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item12" name="board_item" type="radio" value="12"/>
+                                        <input id="category_detail_item12" name="category_no" type="radio" value="21"/>
                                         <h4><label for="category_detail_item12">자격증</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item13" name="board_item" type="radio" value="13"/>
+                                        <input id="category_detail_item13" name="category_no" type="radio" value="22"/>
                                         <h4><label for="category_detail_item13">스터디</label></h4>
                                     </li>
                                 </ul><!--category_detail_list end -->
@@ -249,43 +236,43 @@
                                 <h3 class="screen_out">스포츠/레저 카테고리</h3>
                                 <ul class="category_detail_list"><!--category_detail_list start -->
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item14" name="board_item" type="radio" value="14"/>
+                                        <input id="category_detail_item14" name="category_no" type="radio" value="23"/>
                                         <h4><label for="category_detail_item14">자전거</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item15" name="board_item" type="radio" value="15"/>
+                                        <input id="category_detail_item15" name="category_no" type="radio" value="24"/>
                                         <h4><label for="category_detail_item15">구기종목</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item16" name="board_item" type="radio" value="16"/>
+                                        <input id="category_detail_item16" name="category_no" type="radio" value="25"/>
                                         <h4><label for="category_detail_item16">골프</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item17" name="board_item" type="radio" value="17"/>
+                                        <input id="category_detail_item17" name="category_no" type="radio" value="26"/>
                                         <h4><label for="category_detail_item17">등산</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item18" name="board_item" type="radio" value="18"/>
+                                        <input id="category_detail_item18" name="category_no" type="radio" value="27"/>
                                         <h4><label for="category_detail_item18">낚시</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item19" name="board_item" type="radio" value="19"/>
+                                        <input id="category_detail_item19" name="category_no" type="radio" value="28"/>
                                         <h4><label for="category_detail_item19">볼링</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item20" name="board_item" type="radio" value="20"/>
+                                        <input id="category_detail_item20" name="category_no" type="radio" value="29"/>
                                         <h4><label for="category_detail_item20">수영</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item21" name="board_item" type="radio" value="21"/>
+                                        <input id="category_detail_item21" name="category_no" type="radio" value="30"/>
                                         <h4><label for="category_detail_item21">러닝</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item22" name="board_item" type="radio" value="22"/>
+                                        <input id="category_detail_item22" name="category_no" type="radio" value="31"/>
                                         <h4><label for="category_detail_item22">스노보드/스키</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item23" name="board_item" type="radio" value="23"/>
+                                        <input id="category_detail_item23" name="category_no" type="radio" value="32"/>
                                         <h4><label for="category_detail_item23">스포츠/레저</label></h4>
                                     </li>
                                 </ul><!--category_detail_list end -->
@@ -298,27 +285,27 @@
                                 <h3 class="screen_out">음악/악기 카테고리</h3>
                                 <ul class="category_detail_list"><!--category_detail_list start -->
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item24" name="board_item" type="radio" value="24"/>
+                                        <input id="category_detail_item24" name="category_no" type="radio" value="33"/>
                                         <h4><label for="category_detail_item24">팝/R&B</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item25" name="board_item" type="radio" value="25"/>
+                                        <input id="category_detail_item25" name="category_no" type="radio" value="34"/>
                                         <h4><label for="category_detail_item25">락/메탈</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item26" name="board_item" type="radio" value="26"/>
+                                        <input id="category_detail_item26" name="category_no" type="radio" value="35"/>
                                         <h4><label for="category_detail_item26">힙합</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item27" name="board_item" type="radio" value="27"/>
+                                        <input id="category_detail_item27" name="category_no" type="radio" value="36"/>
                                         <h4><label for="category_detail_item27">클래식/재즈</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item28" name="board_item" type="radio" value="28"/>
+                                        <input id="category_detail_item28" name="category_no" type="radio" value="37"/>
                                         <h4><label for="category_detail_item28">인디</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item29" name="board_item" type="radio" value="29"/>
+                                        <input id="category_detail_item29" name="category_no" type="radio" value="38"/>
                                         <h4><label for="category_detail_item29">악기</label></h4>
                                     </li>
                                 </ul><!--category_detail_list end -->
@@ -331,27 +318,27 @@
                                 <h3 class="screen_out">문화/예술 카테고리</h3>
                                 <ul class="category_detail_list"><!--category_detail_list start -->
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item30" name="board_item" type="radio" value="30"/>
+                                        <input id="category_detail_item30" name="category_no" type="radio" value="39"/>
                                         <h4><label for="category_detail_item30">영화</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item31" name="board_item" type="radio" value="31"/>
+                                        <input id="category_detail_item31" name="category_no" type="radio" value="40"/>
                                         <h4><label for="category_detail_item31">공연/뮤지컬</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item32" name="board_item" type="radio" value="32"/>
+                                        <input id="category_detail_item32" name="category_no" type="radio" value="41"/>
                                         <h4><label for="category_detail_item32">미술/전시</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item33" name="board_item" type="radio" value="33"/>
+                                        <input id="category_detail_item33" name="category_no" type="radio" value="42"/>
                                         <h4><label for="category_detail_item33">그림/일러스트</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item34" name="board_item" type="radio" value="34"/>
+                                        <input id="category_detail_item34" name="category_no" type="radio" value="43"/>
                                         <h4><label for="category_detail_item34">댄스/무용</label></h4>
                                     </li>
                                     <li class="category_detail_item">
-                                        <input id="category_detail_item35" name="board_item" type="radio" value="35"/>
+                                        <input id="category_detail_item35" name="category_no" type="radio" value="44"/>
                                         <h4><label for="category_detail_item35">문화생활</label></h4>
                                     </li>
                                 </ul><!--category_detail_list end -->
@@ -365,11 +352,10 @@
                     <legend class="screen_out">크루 만들기 step2</legend>
                     <div class="crew_create_input_name_box">
                         <label><h2>크루이름</h2>
-                            <input class="crew_name_input" placeholder="크루이름 입력" maxlength="10"/><span class="crew_name_len_limit">최소2자/최대10자</span>
+                            <input name='name' class="crew_name_input" placeholder="크루이름 입력" maxlength="10"/><span class="crew_name_len_limit">최소2자/최대10자</span>
                         </label>
                         <!-- p 요소 한개로만 두어서 text만 바꾸게 해라-->
                         <p id="nameMsg" class="msg">최소 2자 입력해주세요</p>
-                        <p id="nameCheckMsg" class="msg">중복된 이름입니다.</p>
                     </div>
                     <div class="crew_create_cover_box">
                         <h2>크루 커버사진</h2>
@@ -379,7 +365,7 @@
                             </div>
                             <ul class="crew_image_list">
                                 <li class="crew_image_item">
-                                    <input id="category_image_item1" checked="checked" name="image_item" type="radio" value="1"/>
+                                    <input id="category_image_item1" checked="checked" name="cover_img" type="radio" value="1"/>
                                     <label for="category_image_item1">
                                         <img src="img/category1.jpg" width="150" height="100" data-src="img/category1.jpg" title="" alt="" />
                                         <div class="crew_cover_check">
@@ -389,7 +375,7 @@
                                     </label>
                                 </li>
                                 <li class="crew_image_item">
-                                    <input id="category_image_item2" name="image_item" type="radio" value="2"/>
+                                    <input id="category_image_item2" name="cover_img" type="radio" value="2"/>
                                     <label for="category_image_item2">
                                         <img src="img/category2.jpg" width="150" height="100" data-src="img/category2.jpg" title="" alt="" />
                                         <div class="crew_cover_check">
@@ -399,7 +385,7 @@
                                     </label>
                                 </li>
                                 <li class="crew_image_item">
-                                    <input id="category_image_item3" name="image_item" type="radio" value="1"/>
+                                    <input id="category_image_item3" name="cover_img" type="radio" value="1"/>
                                     <label for="category_image_item3">
                                         <img src="img/category3.jpg" width="150" height="100" data-src="img/category3.jpg" title="" alt="" />
                                         <div class="crew_cover_check">
@@ -409,7 +395,7 @@
                                     </label>
                                 </li>
                                 <li class="crew_image_item">
-                                    <input id="category_image_item4" name="image_item" type="radio" value="4"/>
+                                    <input id="category_image_item4" name="cover_img" type="radio" value="4"/>
                                     <label for="category_image_item4">
                                         <img src="img/category4.jpg" width="150" height="100" data-src="img/category4.jpg" title="" alt="" />
                                         <div class="crew_cover_check">
@@ -419,7 +405,7 @@
                                     </label>
                                 </li>
                                 <li class="crew_image_item">
-                                    <input id="category_image_item5" name="image_item" type="radio" value="5"/>
+                                    <input id="category_image_item5" name="cover_img" type="radio" value="5"/>
                                     <label for="category_image_item5">
                                         <img src="img/category5.jpg" width="150" height="100" data-src="img/category5.jpg" title="" alt="" />
                                         <div class="crew_cover_check">
@@ -429,7 +415,7 @@
                                     </label>
                                 </li>
                                 <li class="crew_image_item">
-                                    <input id="category_image_item6" name="image_item" type="radio" value="6"/>
+                                    <input id="category_image_item6" name="cover_img" type="radio" value="6"/>
                                     <label for="category_image_item6">
                                         <img src="img/category6.jpg" width="150" height="100" data-src="img/category6.jpg" title="" alt="" />
                                         <div class="crew_cover_check">
@@ -439,7 +425,7 @@
                                     </label>
                                 </li>
                                 <li class="crew_image_item">
-                                    <input id="category_image_item7" name="image_item" type="radio" value="7"/>
+                                    <input id="category_image_item7" name="cover_img" type="radio" value="7"/>
                                     <label for="category_image_item7">
                                         <img src="img/category7.jpg" width="150" height="100" data-src="img/category7.jpg" title="" alt="" />
                                         <div class="crew_cover_check">
@@ -454,7 +440,7 @@
                                             <i class="fas fa-camera"></i>
                                             <h4>사진추가</h4>
                                         </div>
-                                        <input id="image_input" name="image_item" type="file" value="4" style="display: none;"/>
+                                        <input id="image_input" name="cover_img" type="file" value="4" style="display: none;"/>
                                     </label>
                                 </li>
                             </ul>
@@ -462,7 +448,7 @@
                     </div><!--crew_create_cover_box-->
                     <div class="crew_create_input_intro_box">
                         <label><h2>크루 한 줄 소개글</h2>
-                            <input class="crew_intro_input" maxlength="20" placeholder="한 줄 소개글 입력"/>
+                            <input class="crew_intro_input" maxlength="20" placeholder="한 줄 소개글 입력" name='intro'/>
                             <span class="crew_intro_len_limit">최대 20자</span>
                             <span class="crew_create_detail"></span>
                         </label>
@@ -514,7 +500,7 @@
                     <div class="popular_limit_box">
                         <span>
                             <label><h2>최대 인원 설정</h2>
-                                <input class="crew_population_input" maxlength="2" placeholder="30" value="30"/><span class="head_count"> 명</span>
+                                <input class="crew_population_input" maxlength="2" placeholder="30" value="30" name="max_pop"/><span class="head_count"> 명</span>
 
                                 <span class="crew_population_limit">(최소 10명 / 최대 30명)</span>
                             </label>
@@ -721,11 +707,6 @@
     /* step change end*/
 
     let categoryPath="";
-    /*step1 start*/
-    // const $categoryInput = $('.category_detail_item input');
-
-
-    /*step1 end*/
 
 </script>
 </body>

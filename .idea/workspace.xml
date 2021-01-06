@@ -20,14 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05598bb2-dcf1-4913-bd2e-f7cdbb63f584" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chartExp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/tui-chart.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tui-chart-all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/tui-chart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/밋팅디테일.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/Chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/meeting_detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chartExp.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/create_crew.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_crew.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/apple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/default2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/default3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/notosanskr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/step2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/step2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/step4.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/step4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/step2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/step2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/밋팅디테일.html" beforeDir="false" afterPath="$PROJECT_DIR$/밋팅디테일.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +43,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -57,26 +63,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\BMJ\workspace\saemo\css" />
-      <recent name="C:\BMJ\workspace\saemo\js" />
-      <recent name="C:\BMJ\workspace\saemo\img" />
-      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
-      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\ajax" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\BMJ\workspace\saemo\js" />
       <recent name="C:\BMJ\workspace\saemo" />
       <recent name="C:\BMJ\workspace\saemo\img" />
       <recent name="C:\BMJ\workspace\saemo\css" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\BMJ\workspace\saemo\css" />
+      <recent name="C:\BMJ\workspace\saemo\js" />
+      <recent name="C:\BMJ\workspace\saemo\img" />
+      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
+      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\ajax" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -129,6 +135,12 @@
       <workItem from="1609462343593" duration="5618000" />
       <workItem from="1609551959111" duration="4374000" />
       <workItem from="1609584513110" duration="6123000" />
+      <workItem from="1609690373158" duration="663000" />
+      <workItem from="1609770890709" duration="644000" />
+      <workItem from="1609778610658" duration="65000" />
+      <workItem from="1609778704421" duration="315000" />
+      <workItem from="1609808383153" duration="5311000" />
+      <workItem from="1609838825488" duration="5759000" />
     </task>
     <task id="LOCAL-00001" summary="add confirm">
       <created>1609211753422</created>
@@ -164,11 +176,11 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609383144549" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1609205361071">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1609778725425">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609205361071" />
-    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608777242187" />
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609778725425" />
     <state x="2381" y="164" key="SettingsEditor" timestamp="1609203808054">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

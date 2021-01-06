@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+.question_num{
+    font-size: 20px;
+    font-weight: 700;
+    margin:0 5px 0 0;
+}
 .remove_answer{
     cursor: pointer;
 }

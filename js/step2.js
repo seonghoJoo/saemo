@@ -11,7 +11,9 @@ let nameFlag = false, crewFlag = true,imgFlag=true;
 // input 시 글자 10자 제한
 $crew_name.keyup(function (e) {
 
+
     let val = $crew_name.val();
+    //글자수 10자로 제한하기
     val = val.substr(0,10);
     $crew_name.val(val);
     $crewNameLenLimit.text("("+val.length+" / 10자)");    //글자수 실시간 카운팅
@@ -30,18 +32,20 @@ $crew_name.keyup(function (e) {
             },
             success:function(json) {
                 console.log("ajax 실행:"+json.result);
-
                 if(json.result==false) {
-                    $('#nameCheckMsg').addClass("ok");
+                    $nameMsg.addClass("ok");
+                    $nameMsg.text('중복된 이름입니다.');
                 }else{
-                    $('#nameCheckMsg').removeClass("ok");
+                    $nameMsg.removeClass("ok");
                 }
             }
         });
 
         nextBtnOn2(nameFlag,crewFlag,imgFlag);
     }else{
+        //2자 미만일때
         $nameMsg.addClass("ok");
+        $nameMsg.text('최소 2자 입력해주세요');
         nameFlag = false;
         nextBtnOn2(nameFlag,crewFlag,imgFlag);
     }// if ~ else end
