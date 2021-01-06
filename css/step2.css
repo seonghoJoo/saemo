@@ -21,7 +21,6 @@
 }
 .crew_name_input,.crew_intro_input, .crew_population_input:focus{/*<input> 포커스시 보더*/
     outline-color: #ff6333;
-
 }
 
 .crew_intro_input {

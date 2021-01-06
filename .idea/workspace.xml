@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05598bb2-dcf1-4913-bd2e-f7cdbb63f584" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ajax/qualificationForm.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ajax/refuse.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create_crew.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_crew.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/가입신청폼.html" beforeDir="false" afterPath="$PROJECT_DIR$/가입신청폼.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/밋팅디테일.html" beforeDir="false" afterPath="$PROJECT_DIR$/밋팅디테일.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/step2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/step2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +105,7 @@
       <workItem from="1608701859049" duration="151000" />
       <workItem from="1608702507586" duration="2090000" />
       <workItem from="1608709467344" duration="6274000" />
-      <workItem from="1609898893766" duration="11315000" />
+      <workItem from="1609898893766" duration="24962000" />
     </task>
     <servers />
   </component>
