@@ -20,20 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05598bb2-dcf1-4913-bd2e-f7cdbb63f584" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/Chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/meeting_detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chartExp.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/create_crew.html" beforeDir="false" afterPath="$PROJECT_DIR$/create_crew.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/apple.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/default2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/default3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/notosanskr.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/step2.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/step2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/step4.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/step4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/step2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/step2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/밋팅디테일.html" beforeDir="false" afterPath="$PROJECT_DIR$/밋팅디테일.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -63,26 +51,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\BMJ\workspace\saemo\js" />
       <recent name="C:\BMJ\workspace\saemo" />
-      <recent name="C:\BMJ\workspace\saemo\img" />
-      <recent name="C:\BMJ\workspace\saemo\css" />
+      <recent name="C:\BMJ\workspace\saemo\js" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
+      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\css" />
+      <recent name="C:\Users\E\WebstormProjects\untitled1\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\BMJ\workspace\saemo\css" />
-      <recent name="C:\BMJ\workspace\saemo\js" />
-      <recent name="C:\BMJ\workspace\saemo\img" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1" />
       <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\ajax" />
+      <recent name="C:\BMJ\workspace\JAVA_Class\untitled1\css" />
+      <recent name="C:\Users\E\WebstormProjects\untitled1" />
+      <recent name="C:\Users\E\WebstormProjects\untitled1\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -115,41 +103,8 @@
       <workItem from="1608701859049" duration="151000" />
       <workItem from="1608702507586" duration="2090000" />
       <workItem from="1608709467344" duration="6274000" />
-      <workItem from="1608748866774" duration="2559000" />
-      <workItem from="1608775631229" duration="51000" />
-      <workItem from="1608777186261" duration="57000" />
-      <workItem from="1608785705414" duration="784000" />
-      <workItem from="1608789267946" duration="317000" />
-      <workItem from="1608789733241" duration="6623000" />
-      <workItem from="1608805806461" duration="1786000" />
-      <workItem from="1608928069496" duration="3630000" />
-      <workItem from="1608932311845" duration="14000" />
-      <workItem from="1608954458551" duration="18206000" />
-      <workItem from="1609033134999" duration="7912000" />
-      <workItem from="1609115974059" duration="3394000" />
-      <workItem from="1609120191521" duration="16157000" />
-      <workItem from="1609202327338" duration="4526000" />
-      <workItem from="1609209104874" duration="79000" />
-      <workItem from="1609209270255" duration="1787000" />
-      <workItem from="1609381793309" duration="4244000" />
-      <workItem from="1609462343593" duration="5618000" />
-      <workItem from="1609551959111" duration="4374000" />
-      <workItem from="1609584513110" duration="6123000" />
-      <workItem from="1609690373158" duration="663000" />
-      <workItem from="1609770890709" duration="644000" />
-      <workItem from="1609778610658" duration="65000" />
-      <workItem from="1609778704421" duration="315000" />
-      <workItem from="1609808383153" duration="5311000" />
-      <workItem from="1609838825488" duration="5759000" />
+      <workItem from="1609898893766" duration="1466000" />
     </task>
-    <task id="LOCAL-00001" summary="add confirm">
-      <created>1609211753422</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1609211753422</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,53 +121,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="add confirm" />
-    <option name="LAST_COMMIT_MESSAGE" value="add confirm" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2610" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609383144549">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2610" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609383144549" />
-    <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1609778725425">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609205361071" />
-    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609778725425" />
-    <state x="2381" y="164" key="SettingsEditor" timestamp="1609203808054">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609202870292" />
-    <state x="2381" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609203808054" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609211756469">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609211756469" />
-    <state x="2466" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1608962297800">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2466" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608962297800" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1608972894728">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608972894728" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609145521163">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609139837846" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1609145521163" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/글쓰기.html</url>
-          <line>283</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
