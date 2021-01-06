@@ -589,25 +589,25 @@
     <li class="question_item">
         <div>
             <label>
-                <span class="question_num"><%=++question%></span><input class="question_input" placeholder='질문명을 입력해 주세요'/>
+                <span class="question_num"><%=++question%></span><input name="quest<%=++question%>" class="question_input" placeholder='질문명을 입력해 주세요'/>
             </label>
             <span class="remove_question">질문 삭제</span>
         </div>
         <div>
             <label><span><i class="far fa-dot-circle"></i></span>
-                <input class="answer_input" for="" placeholder='보기를 적어주세요'/>
+                <input class="answer_input" placeholder='보기를 적어주세요'/>
             </label>
             <span class="remove_answer"><i class="far fa-minus-square"></i></span>
         </div>
         <div>
             <label><span><i class="far fa-dot-circle"></i></span>
-                <input class="answer_input" for="" placeholder='보기를 적어주세요'/>
+                <input class="answer_input"  placeholder='보기를 적어주세요'/>
             </label>
             <span class="remove_answer"><i class="far fa-minus-square"></i></span>
         </div>
         <div>
             <label><span><i class="far fa-dot-circle"></i></span>
-                <input class="answer_input" for="" placeholder='보기를 적어주세요'/>
+                <input class="answer_input" placeholder='보기를 적어주세요'/>
             </label>
             <span class="remove_answer"><i class="far fa-minus-square"></i></span>
         </div>
@@ -619,7 +619,7 @@
 <script type="text/template" id="multipleChoiceAnswerTmpl">
     <div>
         <label><span><i class="far fa-dot-circle"></i></span>
-            <input class="answer_input" for="" placeholder='보기를 적어주세요'/>
+            <input class="answer_input" placeholder='보기를 적어주세요'/>
         </label>
         <span class="remove_answer"><i class="far fa-minus-square"></i></span>
     </div>
